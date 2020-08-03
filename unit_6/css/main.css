@@ -1,0 +1,166 @@
+/** {
+	margin: 0;
+	padding: 0;
+}*/
+body {
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.toolbar {
+	background-color: #505151;
+	color: #ddd;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#sign-up {
+	float: right;
+	margin-right: 7%;
+}
+label {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+input {
+	border-radius: 3px;
+	border-color: #transparent;
+}
+.wrapper {
+	margin-right: 10%;
+	margin-left: 10%;
+}
+header {
+	padding: 20px;
+}
+.logo {
+	margin-left: 6%;
+	float: left;
+}
+.company-name {
+	width: 100%;
+	float: right;
+}
+h1 {
+	font-family: 'PT Serif', serif;
+	font-size: 50px;
+	line-height: 20px;
+	color: black;
+	text-align: center;
+	margin-bottom: 30px;
+}
+nav {
+	
+}
+nav ul {
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+}
+nav a {
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+	padding: 15px 30px;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+	
+}
+nav a:hover {
+	color: #F64C4C;
+}
+main {
+}
+.hero {
+	text-align: center;
+	padding: 20px;
+}
+.hero img, .product img {
+	width: 55%;
+}
+.two_column {
+	margin-bottom: 30px;
+}
+.img-left, .img-right {
+	width: 38%;
+	vertical-align: bottom;
+	/*padding: 20px;*/
+}
+.img-left {
+	float: left;
+}
+.img-right{
+	float: right;
+}
+.img-left img, .img-right img {
+	width: 100%;
+	padding: 5%;
+}
+.par-right, .par-left {
+	padding: 15% 10%;
+	width: 62%;
+	box-sizing: border-box;
+}
+.par-right {
+	float: right;
+}
+.par-left {
+	float: left;
+}
+#red {
+	background-color: #F64C4C;
+	color: white;
+}
+#blue {
+	background-color: #3a86ff;
+	color: white;
+}
+#green {
+	background-color: #27ae60;
+	color: white;
+}
+#yellow {
+	background-color: #f2c94c;
+	color: #505151;
+}
+.product {
+	/*background-color: #FFE2B8;*/
+	text-align: center;
+	padding: 20px;
+}
+#mackenzie {
+	width: 75%;
+}
+#green img {
+	 width: 75%;
+	}
+.product img {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+}
+footer {
+	margin-bottom: 8%;
+}
+footer ul {
+	list-style-type: none;
+	margin-left: 0;
+}
+footer a {
+	text-decoration: none;
+	color: #505151;
+}
+footer a:hover {
+	color: black;
+}
+#top {
+	float: right;
+}

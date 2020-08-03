@@ -1,0 +1,151 @@
+body {
+	/*background-color: #D7E6FD;*/
+	/*background-color: #E0E8EC;*/
+	background-color: black;
+	}
+
+header {
+	display: block;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+/*header img {
+	size: 30%;
+}*/
+
+nav {
+	height: 40px;
+	display: inline-block;
+/*	position: center;
+*/	/*text-align: center;*/
+	/*background-color: #00ACF5;*/
+	margin: 0;
+	padding-bottom: 30px;
+	/*align-content: space-around;*/
+}
+
+
+nav a {
+/*	padding: 40px 90px 20px 90px;
+*/	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	color: #00ACF5;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+
+h1 {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	/*color: #D34745;*/
+	color: #C62A2A;
+	margin-top: 50px;
+	/*word-spacing: 18px;*/
+}
+
+p {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #C62A2A;
+	/*color: #00ACF5;*/
+}
+
+footer	{
+	margin-bottom: 60px;
+}
+
+
+
+* {
+	box-sizing: border-box;
+}
+.rowš{
+	height: 100px;
+
+}
+
+.column {
+	float: left;
+	width: 33.3%;
+	/*padding: 1px;*/
+}
+
+.row::after {
+	content: " ";
+	clear: both;
+	display: table;
+}
+
+#logo {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#what {
+	float: left;
+	padding-right: 100px;
+	padding-left: 50px;
+}
+
+#sizes {
+	float: left;
+	padding-right: 100px;
+	padding-left-left: 50px;
+}
+
+#instructions {
+	text-align: center;
+}
+
+#retailers {
+	float: right;
+	padding-left: 100px;
+	padding-right: 50px;
+}
+
+
+#story {
+	float: right;
+	padding-right: 50px;
+	padding-left: 100px;
+}
+
+#img-left {
+	width: 33.3%;
+	/*border: solid #D34745 15px;
+	border-radius: 6px;*/
+}
+
+#img-middle {
+	/*border: solid #78C04B 15px;*/	
+	width: 33.3%;
+	/*border: solid #289144 15px;
+	border-radius: 6px;*/
+	padding: -3px;
+}
+#img-right {
+	width: 33.3%;
+	/*border: solid #FBEF00 15px;
+	border-radius: 6px;*/
+}
+/*#westie {
+	border: solid #3D952D 15px;
+}*/
+/*
+#sizes {
+	float: left;
+}
+
+#retailers {
+	align-items: right;
+}*/
+
+

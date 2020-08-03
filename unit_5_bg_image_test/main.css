@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body	{
+	font-family: sans-serif;
+}
+h1 {
+	position: relative;
+	top: 98%;
+	font-size: 20px;
+	color: rgba(0,0,0,0.8);
+
+}
+h1, button {
+	font-size: 20px;
+	display: inline-block;
+	position: relative;
+	/*top: 200px;*/
+}
+.hero	{
+	height: 355px;
+	width: 445px;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 5%;
+	background-image: url(images/powder-pug-smile-retouch.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+button {
+	position: relative;
+/*	display: block;
+*/	top: 98%;
+	right: -15px;
+	background-color: transparent;
+	opacity: .8;
+	color: black;
+	text-align: center;
+	border-style: none;
+	padding: 5px;
+	border:  2px solid black;
+	border-radius: 3px;
+}
