@@ -113,16 +113,19 @@ h2:hover {
 	text-decoration-color: red;
 	text-underline-position: under;
 }
-.lower-content {
+.lower-content-text {
 	text-align: center;
 }
-.lower-content h2:first-child {
+.lower-content-text h2:first-child {
 	padding-top: 2.5rem;
 }
-.lower-content h2:last-child {
+.lower-content-text h2:last-child {
 	padding-bottom: 4rem;
 }
-.lower-content button {
+.lower-content-button {
+	text-align: center;
+}
+.lower-content-button button {
 	font-size: 1.2rem;
 	background: red;
 	color: white;
@@ -162,7 +165,8 @@ footer ul a {
 footer a:hover {
 	color: black;
 }
-@media (max-width: 450px) {
+
+@media only screen and (max-width: 450px) {
 	body {
 		border: red .6em solid;
 		border-radius: .5em;
@@ -201,13 +205,10 @@ footer a:hover {
 	section:nth-child(2) img {
 		width: 90%;
 		}
-	}
-	.lower-content {
+	.lower-content-text {
+		display: none;
 		padding-bottom: 2rem;
 		margin-bottom: -4rem;
-	}
-	h2 {
-		display:none;
 	}
 	footer ul {
 		padding: none;
@@ -222,6 +223,11 @@ footer a:hover {
 		padding: 0 1em;
 	}
 }
+
+@media only screen and (min-width: 451px) {
+	
+}
+
 
 
 
