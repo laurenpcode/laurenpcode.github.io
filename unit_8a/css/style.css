@@ -98,29 +98,26 @@ section img {
 	border-radius: 5px;
 	box-sizing: border-box;
 }
-.lower-content {
+.lower-content-text {
 	text-align: center;
 	padding: 0 5em;
 	margin: 0 auto;
-}
-h2 {
-	font-size: 1.25rem;
-	font-weight: 400;
-	padding-top: 1rem;
-}
-h2:hover {
-	text-decoration: underline;
-	text-decoration-color: red;
-	text-underline-position: under;
-}
-.lower-content-text {
-	text-align: center;
 }
 .lower-content-text h2:first-child {
 	padding-top: 2.5rem;
 }
 .lower-content-text h2:last-child {
 	padding-bottom: 4rem;
+}
+.lower-content-text h2 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	padding-top: 1rem;
+}
+.lower-content-texth2:hover {
+	text-decoration: underline;
+	text-decoration-color: red;
+	text-underline-position: under;
 }
 .lower-content-button {
 	text-align: center;
