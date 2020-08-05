@@ -1,0 +1,297 @@
+body {
+	background: black;
+	color: #eee;
+	font-family: Lato, sans-serif;
+	font-size: 1rem;
+	}
+	.toolbar {
+		color: white;
+		padding-top: 1em;
+		padding-bottom: 1.5em;
+		height: 1.5em;
+		box-sizing: border-box;
+		position: relative;
+	}
+	#hamburger img {
+		height: 2.6rem;
+		width: 2.6rem;
+		margin-left: 2.6rem;
+		position: absolute;
+		top: .6875rem;
+		left: .6875rem;
+	}
+	#sign-up {
+		text-align: right;
+		margin-right: 6%;
+	}
+	label {
+		font-family: 'Lato', sans-serif;
+		font-size: .8888em;
+	}
+	input {
+		border-radius: 3px;
+		border-color: #transparent;
+	}
+	input[type="email"] {
+		margin-left: .5rem;
+		padding-left: .25rem;
+		background: #ddd;
+		border: none;
+	}
+header {
+	margin-top: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	position: relative;
+}
+.company-name img {
+	height: 9em;
+	text-align: center;
+	margin-top: 2.3em;
+	/*position: absolute;
+	top: 10px;
+	left: 100px;*/
+}
+nav {margin-top: 1.2rem;
+	margin-bottom: 1.8rem;
+}
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 1em 2em;
+}
+nav a {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2rem;
+	text-decoration: none;
+	font-weight: 400;
+}
+nav a:hover,
+nav a:focus {
+	color: red;
+}
+.wrapper {
+	padding: 0 4em;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+section {
+	width: calc( (99.99% - 4rem)/3 );
+	display: inline-block;
+	margin-right: 2rem;
+}
+section:last-child {
+	margin-right: 0;
+}
+section img {
+	width: 100%;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.lower-content-text {
+	text-align: center;
+	padding: 0 5em;
+	margin: 0 auto;
+}
+.lower-content-text h2:first-child {
+	padding-top: 2.5rem;
+}
+.lower-content-text h2:last-child {
+	padding-bottom: 4rem;
+}
+.lower-content-text h2 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	padding-top: 1rem;
+}
+.lower-content-text h2:hover {
+	text-decoration: underline;
+	text-decoration-color: red;
+	text-underline-position: under;
+}
+.lower-content-button {
+	text-align: center;
+}
+.lower-content-button button {
+	font-size: 1.2rem;
+	background: red;
+	color: white;
+	padding: .7rem;
+	border: none;
+	border-radius: 5px;
+	margin: 2rem;
+	outline: none;
+}
+button:hover, 
+button:focus {
+	background: blue;
+}
+footer	{
+	background: #eee;
+	position: relative;
+	bottom:0;
+	right:0;
+	left:0;
+	margin-top: 3rem;
+}
+footer img {
+	height: 4rem;
+	display: inline-block;
+	position: absolute;
+	top: 3rem;
+	left: 42%;
+}
+footer ul {
+	list-style-type: none;
+	padding: 2em 0;
+}
+footer ul a {
+	text-decoration: none;
+	color: #505151;
+}
+footer a:hover {
+	color: black;
+}
+@media only screen and (max-width: 280px) {
+	.wrapper {
+		padding: 0 2em;
+	}
+	footer .wrapper img {
+	display: none;	
+	}
+	footer .wrapper {
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 700px) {
+	body {
+		border: red .6em solid;
+		border-radius: .5em;
+	}
+	#sign-up,
+	#hamburger img {
+		display: none;
+	}
+	.company-name img {
+	margin-top: 0;
+	}
+	nav li {
+		display: block;
+	}
+	nav a {
+		font-size: 1.2em;	
+		padding: 1.5rem, 2rem;	
+	}
+	nav a:hover,
+	nav a:focus {
+		background: red;
+	}
+	section {
+		width: 70%%;
+		height: auto;
+	}
+	section:first-child,
+	section:last-child  {
+		display: none;
+	}
+	section:nth-child(2)  {
+		width: 100%;
+		text-align: center;
+	}
+	.lower-content-text {
+		display: none;
+		padding-bottom: 2rem;
+		margin-bottom: -4rem;
+	}
+	.lower-content-button {
+		margin-bottom: -2rem;
+	}
+	footer ul {
+		padding: 1rem 0;
+		line-height: 2rem;
+	}
+	footer li:nth-child(3) {
+		display: none;
+	}
+	footer li:last-child {
+		display: none;
+	}
+	footer .wrapper {
+		padding: 0 1em;
+	}
+	footer img {
+	top: 35%;
+	left: 48%;
+	}
+}
+
+@media only screen
+	and (min-device-width: 560px)
+	and (max-device-width: 825px)
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: landscape) {
+		.toolbar, 
+		#hamburger img {
+			display: block;
+			height: 3.5rem;
+			width: 3.5rem;
+			top: 1rem;
+			left: 1rem;
+		}
+		.company-name img {
+			height: 7rem;
+			margin-top: -3rem;
+			margin-right: 3rem;
+			margin-bottom: 2rem;
+			margin-left: 4rem;
+		}
+		nav {
+			display: none;
+		}
+		footer img {
+		top: 35%;
+		left: 70%;
+		}
+	}
+
+	@media only screen
+	and (min-device-width: 700px)
+	and (max-device-width: 825px)
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: landscape) {
+		label, 
+		input {
+			display: none;
+		}
+		#hamburger img {
+			height: 3rem;
+			width: 3rem;
+		}
+		h2 {
+			display: none;
+		}
+		.lower-content-button button {
+			margin-bottom: 0;
+		}
+	}
+	@media only screen and (max-width: 910px) {
+		nav li {
+			padding: 1em;
+		}
+		nav a {
+			font-size: 1.1em;
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
