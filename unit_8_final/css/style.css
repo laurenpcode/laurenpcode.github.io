@@ -189,7 +189,7 @@ footer a:hover {
 		background: red;
 	}
 	section {
-		width: 70%%;
+		width: 70%;
 		height: auto;
 	}
 	section:first-child,
@@ -285,6 +285,143 @@ footer a:hover {
 		}
 
 	}
+
+	/*for ipad pro*/
+	@media only screen
+	and (min-device-width: 766px)
+	and (max-device-width: 1026px)
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: portrait) {
+		section {
+			width: 70%;
+			height: auto;
+		}
+		section:first-child,
+		section:last-child  {
+			display: none;
+		}
+		section:nth-child(2)  {
+			width: 100%;
+			text-align: center;
+		}
+		.lower-content-button {
+			position: relative;
+		}
+		.lower-content-button button {
+			position: absolute;
+			top: -17rem;
+			left: 47rem;
+			font-size: 1.3rem;
+			background: transparent;
+			color: rgb(0,0,0, .8);
+			padding: .8rem;
+			border: 1px solid rgb(0,0,0, .8);
+			border-radius: 5px;
+			margin: 2rem;
+			outline: none;
+		}
+		footer {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+		}
+	}
+	/*for ipad*/
+	@media only screen
+	and (device-width: 768px) {
+		header {
+			position: relative;
+		}
+		.company-name {
+			position: relative;
+		}
+		.company-name img {
+			position: absolute;
+			top: -70px;
+			left: 320px;
+		}
+		#sign-up {
+			display: none;
+		}
+		#hamburger {
+			display: none;
+		}
+		nav {
+			position: relative;
+		}
+		nav ul {
+			position: absolute;
+			top: 140px;
+			left: 36px;
+		}
+		nav li:last-child {
+			padding-right: 0;
+		}
+		nav a {
+			font-size: 1.2rem;
+		}
+
+		section {
+			width: 70%;
+			height: auto;
+		}
+		section:first-child,
+		section:last-child  {
+			display: none;
+		}
+		section:nth-child(2)  {
+			width: 100%;
+			position: relative;
+			/*text-align: center;*/
+		}
+		section:nth-child(2) img  {
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			top: 200px;
+			left: 80px;
+		}
+		.lower-content-text {
+			position: absolute;
+			top: 880px;
+			left: 250px;
+			text-align: center;
+		}
+		.lower-content-text h2 {
+			font-size: 1.6rem;
+		}
+		.lower-content-button {
+			position: relative;
+		}
+		.lower-content-button button {
+			position: absolute;
+			top: 600px;
+			left: 586px;
+			font-size: 1.3rem;
+			background: transparent;
+			color: rgb(0,0,0, .8);
+			padding: .8rem;
+			border: 1px solid rgb(0,0,0, .8);
+			border-radius: 5px;
+			margin: 2rem;
+			outline: none;
+		}
+		footer {
+			position: absolute;
+			bottom: -191px;
+			right: -150px;
+		}
+		footer img {
+			height: 6rem;
+			display: inline-block;
+			position: absolute;
+			top: 3rem;
+			left: 40rem;
+		}
+	}
+
+
 
 
 
