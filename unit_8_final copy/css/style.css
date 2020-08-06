@@ -179,6 +179,15 @@ footer a:hover {
 	}
 	nav li {
 		display: block;
+		width: 75%;
+		border-radius: .5em;
+		margin-left: auto;
+		margin-right: auto;
+		transition-property: background-color;
+		/*transition-duration: .5s;*/
+	}
+	nav li:hover {
+		background-color: red;
 	}
 	nav a {
 		font-size: 1.2em;	
@@ -186,7 +195,7 @@ footer a:hover {
 	}
 	nav a:hover,
 	nav a:focus {
-		background: red;
+		color: white;
 	}
 	section {
 		width: 70%;
