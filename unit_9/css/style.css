@@ -128,6 +128,22 @@ section img {
 	margin: 2rem;
 	outline: none;
 }
+.stores {
+	vertical-align: top;
+}
+.stores h3 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: .2rem;
+	margin-top: 2rem;
+	margin-bottom: .5rem;
+}
+secction .stores p {
+	font-size: 1.1rem;
+	line-height: 1.9rem
+	margin-bottom: 3rem;
+}
+
 #boot-assistant {
 	text-align: center;
 	padding: 10%;
@@ -165,13 +181,21 @@ section img {
 	text-align: center;
 }
 #our-story h2 {
-	font-size: 1.7rem;
- 	top: 26rem;
- 	left: 3rem;
+	font-size: 1.5rem;
+ 	top: 85%;
+ 	left: 5%;
 }
 #our-story p {
- 	top: 27rem;
- 	left: 50rem;
+ 	top: 92%;
+ 	left: 5%;
+}
+#our-story-text {
+	padding: 1rem;
+}
+#our-story-text p {
+	font-size: 1.1rem;
+	line-height: 1.9rem;
+	margin-top: 2.1rem;
 }
 button:hover, 
 button:focus {
