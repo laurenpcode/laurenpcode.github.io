@@ -82,7 +82,7 @@ nav a:focus {
 .wrapper {
 	padding: 0 4em;
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 1100px;
 }
 section {
 	width: calc( (99.99% - 4rem)/3 );
