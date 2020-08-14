@@ -177,6 +177,15 @@ section img {
 	color: black;
 	font-style: italic;
 }
+#contact-info {
+	text-align: center;
+	margin: 8rem auto;
+	font-size: 1.4rem;
+	line-height: 2.2rem;
+}
+#contact-info p {
+	margin-bottom: 2rem;
+}
 #our-story {
 	background-image: url(../images/snowy-day.jpg);
 	background-size: cover;
