@@ -58,9 +58,11 @@ h1 {
 	line-height: 9rem;
 	color: black;
 }
-nav {margin-top: 1.2rem;
+nav {
+	margin-top: 1.2rem;
 	margin-bottom: 1.8rem;
 }
+
 nav li {
 	list-style-type: none;
 	display: inline-block;
@@ -69,7 +71,7 @@ nav li {
 nav a {
 	color: black;
 	font-family: 'Lato', sans-serif;
-	font-size: 1.2rem;
+	/*font-size: 1.8rem;*/
 	text-decoration: none;
 	font-weight: 400;
 }
