@@ -130,13 +130,16 @@ section img {
 }
 .stores {
 	vertical-align: top;
+	font-size: 1.2rem;
+	line-height: 1.8rem
 }
 .stores h3 {
 	font-size: 1.2rem;
 	font-weight: bold;
-	margin-bottom: .2rem;
-	margin-top: 2rem;
-	margin-bottom: .5rem;
+	margin-top: 4rem;
+}
+.stores p {
+	margin-bottom: 3rem;
 }
 .testimonials {
 	margin-top: 3rem;
@@ -150,13 +153,6 @@ section img {
 	margin-top: 2rem;
 	margin-bottom: .5rem;
 }
-
-section .stores p {
-	font-size: 1.1rem;
-	line-height: 1.9rem
-	margin-bottom: 3rem;
-}
-
 #boot-assistant {
 	text-align: center;
 	padding: 10%;
@@ -289,7 +285,7 @@ footer a:hover {
 	nav li {
 		display: block;
 		width: 75%;
-		border-radius: .5em;
+		border-radius: .2em;
 		margin-top: 0;
 		margin-left: auto;
 		margin-right: auto;
