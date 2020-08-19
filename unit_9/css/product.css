@@ -107,6 +107,9 @@ nav a:focus {
 	padding: 5%;
 	float: left;
 }
+.left p, .middle p, .right p {
+	margin-bottom: .8rem;
+}
 #link-to-size-sheets h2{
 	text-align: center;
 	margin-right: auto;
