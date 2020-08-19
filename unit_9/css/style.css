@@ -371,6 +371,9 @@ footer a:hover {
 		padding-bottom: 2rem;
 		margin-bottom: -4rem;
 	}
+	.entry input {
+		width: 200px;
+	}
 	
 	footer ul {
 		padding: 1rem 0;
