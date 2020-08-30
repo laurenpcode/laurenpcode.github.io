@@ -1,8 +1,14 @@
 /*html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }*/
-
+.wrapper {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #ddd;
+}
 header {
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 .column section {
@@ -12,5 +18,45 @@ header {
 	width: 100%;
 }
 .column section h3 {
+	text-align: center;
+}
+#col-one {
+	width: 24%;
+	float: left;
+}
+#col-two {
+	width: 24%;
+	float: left;
+}
+#col-three {
+	width: 24%;
+	float: left;
+}
+#col-four {
+	width: 24%;
+	float: left;
+}
+
+nav {
+	width: 15%;
+	background: #444;
+}
+nav a {
+	display: block;
+	text-decoration: none;
+	padding: 8px 16px;
+	color: white;
+}
+nav {
+	float: left;
+}
+.main-wrapper {
+	width: 80%;
+	float: right;
+	text-align: center;
+}
+footer {
+	clear: both;
+	background: #666;
 	text-align: center;
 }
