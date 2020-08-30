@@ -1,7 +1,7 @@
 /*html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }*/
 .wrapper {
-	width: 90%;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	background: #ddd;
@@ -10,19 +10,39 @@ header {
 	text-align: center;
 	margin-bottom: 30px;
 }
-
+.main-wrapper {
+	width: 83%;
+	float: right;
+	text-align: center;
+	/*background: pink;*/
+}
 .column section {
-	width: 15%;
+	width: 80%;
+	padding-bottom: 5%;
+	/*background: yellow;*/
 }
 .column section img {
 	width: 100%;
 }
+#shoes, #overalls {
+	width: 80%;
+}
 .column section h3 {
 	text-align: center;
+	margin-bottom: 5%;
+}
+.section-wrapper {
+	padding: 3%;
+	color: blue;
+	height: 250px;
+	border: 1px solid black;
+	background: teal;
+	margin-bottom: 3%;
 }
 #col-one {
 	width: 24%;
 	float: left;
+	margin-left: 4%;
 }
 #col-two {
 	width: 24%;
@@ -40,6 +60,7 @@ header {
 nav {
 	width: 15%;
 	background: #444;
+	padding-left: 2%;
 }
 nav a {
 	display: block;
@@ -49,11 +70,6 @@ nav a {
 }
 nav {
 	float: left;
-}
-.main-wrapper {
-	width: 80%;
-	float: right;
-	text-align: center;
 }
 footer {
 	clear: both;
