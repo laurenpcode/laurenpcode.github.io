@@ -31,9 +31,11 @@ header {
 	text-align: center;
 	margin-bottom: 5%;
 }
+.column section a {
+	text-decoration: none;
+}
 .section-wrapper {
 	padding: 3%;
-	color: blue;
 	height: 250px;
 	border: 1px solid black;
 	background: teal;
@@ -75,4 +77,19 @@ footer {
 	clear: both;
 	background: #666;
 	text-align: center;
+}
+
+/*breakpoint to have one image per row*/
+@ media (max-width: 650px) {
+
+}
+
+/*breakpoint to go to two images per row*/
+@media (max-width: 850px) {
+	
+}
+
+/*adjust width of images so they don't overlfow wrapper*/
+@media (min-width: 1400px){
+	
 }
