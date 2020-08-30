@@ -1,0 +1,16 @@
+/*html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }*/
+
+header {
+	text-align: center;
+}
+
+.column section {
+	width: 15%;
+}
+.column section img {
+	width: 100%;
+}
+.column section h3 {
+	text-align: center;
+}
