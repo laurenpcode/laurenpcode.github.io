@@ -1,5 +1,5 @@
-/*html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }*/
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
 .wrapper {
 	width: 95%;
 	margin-left: auto;
@@ -36,14 +36,14 @@ h2 {
 	text-align: center;
 	/*background: pink;*/
 }
-clearfix:after{
+/*clearfix:after{
 	visibility: hidden;
 	height: 0;
 	font-size: 0;
 	content:"hello";
 	display: block;
 	clear:both;
-	}
+	}*/
 .column section {
 	width: 80%;
 	padding-bottom: 5%;
@@ -68,6 +68,7 @@ clearfix:after{
 	border: 1px solid black;
 	background: teal;
 	margin-bottom: 3%;
+	overflow: hidden;
 }
 #col-one {
 	width: 24%;
