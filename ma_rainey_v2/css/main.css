@@ -6,12 +6,20 @@ html { box-sizing: border-box; }
 	margin-right: auto;
 	background: #aaa;
 }
+body {
+	font-family: 'Roboto', sans-serif;
+}
+header,
+nav,
+.section-wrapper {
+	/*background: #5C5C5C;*/
+	background: #4E4E4E;
+}
 header {
 	text-align: center;
 	margin-bottom: 30px;
-	background: #555;
 	vertical-align: center;
-	margin-bottom: 3rem;
+	margin-bottom: 3.5rem;
 }
 .header-wrapper-one {
 	border: 1px solid black;
@@ -21,19 +29,27 @@ header {
 	border: 1px solid #ddd;
 	padding: 2%;
 }
+.bottom-of-main p {
+	color: #4E4E4E;
+	margin-bottom: 3rem;
+}
 h1 {
+	font-family: 'Chonburi', serif;
+	font-weight: normal;
 	font-size: 3rem;
 	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 	color: white;
 }
+h2, h3 {
+	color: white;
+	font-weight: normal;
+}
 h2 {
-	font-size: 2rem;
-	color: #ddd;
+	font-size: 1.8rem;
 }
 nav {
 	width: 16%;
-	background: #444;
 	float: left;
 	margin-left: 2%;
 	text-align: center;
@@ -44,6 +60,12 @@ nav a {
 	text-decoration: none;
 	padding: 1.5rem .5rem;
 	color: white;
+}
+nav a:first-child {
+	margin-top: 1rem;
+}
+nav a:last-child {
+	margin-bottom: 1rem;
 }
 nav hr {
 	width: 80%;
@@ -81,7 +103,6 @@ nav hr {
 .section-wrapper {
 	padding: 7%;
 	border: 1px solid black;
-	background: #444;
 	margin-bottom: 2rem;
 	overflow: hidden;
 }
@@ -95,17 +116,14 @@ nav hr {
 #col-four {
 	width: 24%;
 	float: left;
-	margin-bottom: 40px;
+	margin-bottom: 5rem;
 }
 #col-one {
 	margin-left: 4%;
 }
 footer {
 	clear: both;
-	/*background: #666;*/
 	text-align: center;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
 }
 
 /*breakpoint to have one image per row*/
