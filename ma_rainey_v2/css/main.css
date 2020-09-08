@@ -47,6 +47,7 @@ h2, h3 {
 }
 h2 {
 	font-size: 1.8rem;
+	margin-bottom: 1.5rem;
 }
 nav {
 	width: 16%;
@@ -87,11 +88,10 @@ nav hr {
 .column section {
 	width: 86%;
 	padding-bottom: 5%;
-	/*background: yellow;*/
 }
 .column section img {
 	width: 100%;
-	border: 1px solid white;
+	/*border: 1px solid white*/;
 }
 .column section h3 {
 	text-align: center;
