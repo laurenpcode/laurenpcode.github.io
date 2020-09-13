@@ -58,6 +58,9 @@ nav {
 	border: 1px solid #222;
 	/*display: none;*/
 }
+#nav-wrapper {
+	height: 100%;
+}
 nav a {
 	display: block;
 	text-decoration: none;
@@ -144,7 +147,7 @@ footer {
 		margin-bottom: .8rem;
 	}
 	h2 {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 	#col-one,
 	#col-two,
@@ -157,6 +160,13 @@ footer {
 }
 
 @media (max-width: 600px) {
+	h1 {
+		font-size: 1.7rem;
+		margin-bottom: .8rem;
+	}
+	h2 {
+		font-size: 1.3rem;
+	}
 	nav {
 		display: none;
 		width: 0;
