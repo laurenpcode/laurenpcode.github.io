@@ -77,7 +77,6 @@ nav hr {
 	width: 82%;
 	float: right;
 	text-align: center;
-	/*background: pink;*/
 }
 /*clearfix:after{
 	visibility: hidden;
@@ -104,10 +103,8 @@ nav hr {
 }
 .section-wrapper {
 	padding: 10%;
-	/*border: 1px solid black;*/
 	box-shadow: 4px 4px 6px #222;
 	margin-bottom: 2rem;
-	/*overflow: hidden;*/
 }
 .section-wrapper h3 {
 	color: white;
@@ -129,27 +126,45 @@ footer {
 	text-align: center;
 }
 
-@media (max-width: 400px) {
+/*media query to go to one image per row*/
+@media (max-width: 375px) {
 	nav {
 		display: none;
 	}
 	.main-wrapper {
-		width: 100%
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	header {
+		margin-bottom: 2rem;
+	}
+	h1 {
+		font-size: 1.5rem;
+		margin-bottom: .8rem;
+	}
+	h2 {
+		font-size: 1.2rem;
 	}
 	#col-one,
 	#col-two,
 	#col-three,
 	#col-four {
-		width: 100%;
+		width: 96%;
 		float: none;
-		margin-bottom: 5rem;
+		margin-bottom: 2rem;
 	}
 }
 
-@ media (max-width: 550px) {
+@media (max-width: 600px) {
 	nav {
 		display: none;
 		width: 0;
+	}
+	.main-wrapper {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
