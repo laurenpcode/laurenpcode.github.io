@@ -14,15 +14,16 @@ nav,
 .section-wrapper {
 	/*background: #5C5C5C;*/
 	background: #4E4E4E;
+	border-radius: 2px;
 }
 header {
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 2rem;
 	vertical-align: center;
 	margin-bottom: 3.5rem;
 }
 .header-wrapper-one {
-	border: 1px solid black;
+	border: 1px solid #222;
 	padding: 2%;
 }
 .header-wrapper-two {
@@ -37,7 +38,7 @@ h1 {
 	font-family: 'Chonburi', serif;
 	font-weight: normal;
 	font-size: 3rem;
-	margin-top: 1rem;
+	margin-top: 1.2rem;
 	margin-bottom: 1.5rem;
 	color: white;
 }
@@ -54,7 +55,8 @@ nav {
 	float: left;
 	margin-left: 2%;
 	text-align: center;
-	border: 1px solid black;
+	border: 1px solid #222;
+	/*display: none;*/
 }
 nav a {
 	display: block;
@@ -102,9 +104,10 @@ nav hr {
 }
 .section-wrapper {
 	padding: 10%;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
+	box-shadow: 4px 4px 6px #222;
 	margin-bottom: 2rem;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .section-wrapper h3 {
 	color: white;
@@ -126,17 +129,55 @@ footer {
 	text-align: center;
 }
 
-/*breakpoint to have one image per row*/
-@ media (max-width: 650px) {
+@media (max-width: 400px) {
+	nav {
+		display: none;
+	}
+	#col-one,
+	#col-two,
+	#col-three,
+	#col-four {
+		width: 96%;
+		float: none;
+		margin-bottom: 5rem;
+	}
 
+}
+
+
+@ media (max-width: 650px) {
+	nav {
+		display: none;
+	}
+	.bottom-of-main p {
+		font-size: .8rem;
+		line-height: 2rem;
+	}
 }
 
 /*breakpoint to go to two images per row*/
-@media (max-width: 850px) {
+@media (max-width: 900px) {
+	#col-one,
+	#col-two,
+	#col-three,
+	#col-four {
+		width: 48%;
+		float: left;
+		margin-bottom: 5rem;
+	}
+
+	#col-one,
+	#col-two {
+		margin-bottom: 0;
+	}
+	#col-three {
+		margin-left: 4%;
+	}
 	
 }
 
-/*adjust width of images so they don't overlfow wrapper*/
-@media (min-width: 1400px){
-	
+/*adjust height of.section-wrapper*/
+@media (min-width: 1200px){
+
+
 }
