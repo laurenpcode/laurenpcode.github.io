@@ -119,6 +119,9 @@ section a {
 	color: white;
 	margin-top: .6rem;
 }
+.coin:hover {
+	border: 3px solid rgba(0,0,0, .8);
+}
 #col-one,
 #col-two,
 #col-three,
