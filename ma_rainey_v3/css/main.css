@@ -89,7 +89,6 @@ nav hr {
 }
 .column section img {
 	width: 100%;
-	/*border: 1px solid white*/;
 }
 .column section h3 {
 	text-align: center;
@@ -126,7 +125,7 @@ footer {
 	clear: both;
 	text-align: center;
 }
-
+/*======M===E===D===I===A======Q===U===E===R===I===E===S=============*/
 /*adjust text of h3 uniforms-laborers*/
 @media (max-width: 1205px){
 	#uniforms-and {
@@ -144,24 +143,10 @@ footer {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	/*#col-one,
-	#col-two,
-	#col-three,
-	#col-four {
-		width: 48%;
-		margin-bottom: 5rem;
-	}
-	#col-one,
-	#col-two {
-		margin-bottom: 0;
-	}
-	#col-three {
-		margin-left: 4%;
-	}*/
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 715px) {
 	h1 {
 		font-size: 1.7rem;
 		margin-bottom: .8rem;
@@ -174,7 +159,6 @@ footer {
 	#col-three,
 	#col-four {
 		width: 48%;
-		/*float: left;*/
 		margin-bottom: 5rem;
 	}
 	#col-one,
@@ -184,15 +168,6 @@ footer {
 	#col-three {
 		margin-left: 4%;
 	}
-	/*nav {
-		display: none;
-		width: 0;
-	}
-	.main-wrapper {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;
-	}*/
 }
 
 /*media query to go to one image per row*/
@@ -236,6 +211,9 @@ footer {
 	div section {
 		margin-right: auto;
 		margin-left: auto;
+	}
+	#uniforms-and {
+		display: inline;
 	}
 	.bottom-of-main {
 		padding-bottom: 3rem;
