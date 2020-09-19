@@ -29,10 +29,6 @@ header {
 	border: 1px solid #ddd;
 	padding: 2%;
 }
-.bottom-of-main p {
-	color: #4E4E4E;
-	margin-bottom: 3rem;
-}
 h1 {
 	font-family: 'Chonburi', serif;
 	font-weight: normal;
@@ -55,7 +51,6 @@ nav {
 	margin-left: 2%;
 	text-align: center;
 	border: 1px solid #222;
-	/*display: none;*/
 }
 #nav-wrapper {
 	height: 100%;
@@ -123,9 +118,81 @@ nav hr {
 #col-one {
 	margin-left: 4%;
 }
+.bottom-of-main p {
+	color: #4E4E4E;
+	margin-bottom: 3rem;
+}
 footer {
 	clear: both;
 	text-align: center;
+}
+
+/*adjust text of h3 uniforms-laborers*/
+@media (max-width: 1205px){
+	#uniforms-and {
+		display: none;
+	}
+
+/*breakpoint to go to two images per row*/
+@media (max-width: 900px) {
+	nav {
+		display: none;
+		width: 0;
+	}
+	.main-wrapper {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*#col-one,
+	#col-two,
+	#col-three,
+	#col-four {
+		width: 48%;
+		margin-bottom: 5rem;
+	}
+	#col-one,
+	#col-two {
+		margin-bottom: 0;
+	}
+	#col-three {
+		margin-left: 4%;
+	}*/
+}
+
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 1.7rem;
+		margin-bottom: .8rem;
+	}
+	h2 {
+		font-size: 1.3rem;
+	}
+	#col-one,
+	#col-two,
+	#col-three,
+	#col-four {
+		width: 48%;
+		/*float: left;*/
+		margin-bottom: 5rem;
+	}
+	#col-one,
+	#col-two {
+		margin-bottom: 0;
+	}
+	#col-three {
+		margin-left: 4%;
+	}
+	/*nav {
+		display: none;
+		width: 0;
+	}
+	.main-wrapper {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}*/
 }
 
 /*media query to go to one image per row*/
@@ -135,9 +202,15 @@ footer {
 	}
 	nav {
 		display: none;
+		width: 0;
+		float: none;
+	}
+	.wrapper {
+		text-align: center;
 	}
 	.main-wrapper {
 		width: 96%;
+		text-align: center;
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
@@ -155,50 +228,20 @@ footer {
 	#col-four  {
 		width: 96%;
 		float: none;
-		margin-bottom: 2rem;
-	}
-}
-@media (max-width: 600px) {
-	h1 {
-		font-size: 1.7rem;
-		margin-bottom: .8rem;
-	}
-	h2 {
-		font-size: 1.3rem;
-	}
-	nav {
-		display: none;
-		width: 0;
-	}
-	.main-wrapper {
-		width: 95%;
-		margin-left: auto;
+		text-align: center;
 		margin-right: auto;
-	}
-}
-
-/*breakpoint to go to two images per row*/
-@media (max-width: 900px) {
-	#col-one,
-	#col-two,
-	#col-three,
-	#col-four {
-		width: 48%;
-		float: left;
-		margin-bottom: 5rem;
-	}
-
-	#col-one,
-	#col-two {
+		margin-left: auto;
 		margin-bottom: 0;
 	}
-	#col-three {
-		margin-left: 4%;
+	div section {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.bottom-of-main {
+		padding-bottom: 3rem;
 	}
 }
 
-/*adjust height of.section-wrapper*/
-@media (min-width: 1200px){
 
 
-}
+
