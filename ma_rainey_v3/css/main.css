@@ -118,7 +118,7 @@ section a {
 	margin-top: .6rem;
 }
 .coin:hover {
-	border: 3px solid rgba(0,0,0, .8);
+	border: 3.5px solid rgba(0,0,0, .5);
 }
 #col-one,
 #col-two,
@@ -187,7 +187,7 @@ footer {
 
 
 /*media query to go to one image per row*/
-@media (max-width: 375px) {
+@media (max-width: 450px) {
 	header {
 		margin-bottom: 2rem;
 	}
