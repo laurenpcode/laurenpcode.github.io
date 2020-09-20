@@ -39,13 +39,16 @@ h1 {
 	margin-bottom: 1.5rem;
 	color: white;
 }
-h2, h3 {
-	color: white;
+h2{
+	color: rgba(255,255,255, .8);
 	font-weight: normal;
-}
-h2 {
 	font-size: 1.8rem;
 	margin-bottom: 1.5rem;
+}
+h3 {
+	color: #bbb;
+	font-weight: 700;
+	letter-spacing: 1.2px;
 }
 nav {
 	width: 16%;
@@ -61,7 +64,7 @@ nav a {
 	display: block;
 	text-decoration: none;
 	padding: 1.5rem .5rem;
-	color: white;
+	color: #bbb;
 	transition: all 300ms;
 }
 nav a:first-child {
@@ -81,14 +84,6 @@ nav hr {
 	float: right;
 	text-align: center;
 }
-/*clearfix:after{
-	visibility: hidden;
-	height: 0;
-	font-size: 0;
-	content:"hello";
-	display: block;
-	clear:both;
-	}*/
 .column section {
 	width: 86%;
 	padding-bottom: 5%;
@@ -110,13 +105,16 @@ section a {
 	transform: scale(1.1);
 	transform-origin: center;
 }
+.home-page h3 {
+	color: #bbb;
+	font-weight: 700;
+}
 .section-wrapper {
 	padding: 10%;
 	box-shadow: 4px 4px 6px #222;
 	margin-bottom: 2rem;
 }
 .section-wrapper h3 {
-	color: white;
 	margin-top: .6rem;
 }
 .coin:hover {
@@ -143,13 +141,13 @@ footer {
 }
 /*======M===E===D===I===A======Q===U===E===R===I===E===S=============*/
 /*adjust text of h3 uniforms-laborers*/
-@media (max-width: 1205px){
+@media (max-width: 1405px){
 	#uniforms-and {
 		display: none;
 	}
 
 /*breakpoint to go to two images per row*/
-@media (max-width: 900px) {
+@media (max-width: 975px) {
 	nav {
 		display: none;
 		width: 0;
@@ -163,7 +161,7 @@ footer {
 }
 
 
-@media (max-width: 715px) {
+@media (max-width: 836px) {
 	h1 {
 		font-size: 1.7rem;
 		margin-bottom: .8rem;
