@@ -3,6 +3,10 @@ body {
 	background-color: #7a6c5d;
 	padding: 7%;
 }
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
 h1 {
 	color: #bd7732;
 	font-size: 50px;
@@ -22,6 +26,7 @@ h2 {
 .image-wrapper {
 	padding-right: 2em;
 	padding-left: 2em;
+	margin-top: 2em;
 }
 .images {
 	text-align: center;
