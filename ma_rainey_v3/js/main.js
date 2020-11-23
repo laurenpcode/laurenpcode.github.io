@@ -6,9 +6,9 @@
 $(document).ready(function(){
 
 	// Lightbox
-	$('#gallery a').magnificPopup({
+	$('.gallery a').magnificPopup({
 		gallery: {
-			enabled: true,
+			enabled: false,
 			tCounter: ''
 		},
 		type: 'image'
