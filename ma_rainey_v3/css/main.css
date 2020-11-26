@@ -77,8 +77,11 @@ nav a:first-child {
 nav a:last-child {
 	margin-bottom: 1rem;
 }
-nav a:hover {
+/*nav a:hover {
 	padding: 3rem 1rem;
+}*/
+nav a:hover {
+	color: black;
 }
 nav hr {
 	width: 80%;
