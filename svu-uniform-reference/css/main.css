@@ -7,9 +7,14 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+.toolbar svg,
+.toolbar h3 {
+	display: none;
+}
 header {
 	text-align: center;
-
+	background: #fff;
+	padding: 2em;
 }
 header img {
 	margin-top: 3%;
@@ -50,6 +55,7 @@ nav a {
 main {
 	float: right;
 	width: 60%;
+	margin-top: 150px;
 	margin-right: 5%;
 }
 main h2 {
@@ -59,10 +65,12 @@ main img {
 	max-width: 100%;
 }
 h1 {
-	font-size: 3em;
+	font-size: 2.5em;
+	margin-bottom: 0;
 }
 h2 {
-	font-size: 2em;
+	font-size: 1.8em;
+	margin-top: .3em;
 }
 h3 {
 
@@ -85,4 +93,36 @@ p {
 }
 footer {
 	clear: both;
+}
+@media (max-width: 699px) {
+	.wrapper {
+		width: 95%;
+	}
+	.toolbar {
+		margin-bottom: 2em;
+	}
+	.toolbar svg, 
+	.toolbar h3 {
+		display: block;
+	}
+	.toolbar svg{
+		float: left;
+		vertical-align: bottom;
+	}
+	.toolbar h3 {
+		float: right;
+		margin: 0;
+	}
+	header h1,
+	header h2 {
+		display: none;
+	}
+	nav {
+		display: none;
+	}
+	main {
+		float: none;
+		width: 100%;
+		margin-top: 0;
+	}
 }
