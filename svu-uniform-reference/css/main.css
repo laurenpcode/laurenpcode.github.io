@@ -14,7 +14,7 @@ body {
 header {
 	text-align: center;
 	background: #fff;
-	padding: 2em;
+	/*padding: 2em;*/
 }
 header img {
 	margin-top: 3%;
@@ -30,6 +30,11 @@ nav {
 	width: 30%;
 	background-color: black;
 	float: left;
+	text-align: left;
+}
+.close, 
+.menu-button {
+	display: none;
 }
 nav ul {
 	list-style-type: none;
@@ -51,7 +56,10 @@ nav a {
 .nav a:hover {
 	color: blue;
 }
-
+#nav-checkbox {
+	position: fixed;
+	clip: rect(0,0,0,0);
+}
 main {
 	float: right;
 	width: 60%;
@@ -72,8 +80,8 @@ h2 {
 	font-size: 1.8em;
 	margin-top: .3em;
 }
-h3 {
-
+header h3 {
+	display: none;
 }
 p {
 
@@ -96,12 +104,12 @@ footer {
 }
 @media (max-width: 699px) {
 	.wrapper {
-		width: 95%;
+		width: 100%;
 	}
 	.toolbar {
 		margin-bottom: 2em;
 	}
-	.toolbar svg, 
+	/*.toolbar svg, */
 	.toolbar h3 {
 		display: block;
 	}
@@ -117,8 +125,61 @@ footer {
 	header h2 {
 		display: none;
 	}
+	header h3 {
+		display: block;
+	}
 	nav {
+		/*display: none;*/
+		position: fixed;
+		height: 100%;
+		width: 80%;
+		left: -80%;
+		text-align: left;
+		opacity: .8;
+		overflow-y: auto;
+		z-index: 100;
+		transition: all .2s ease;
+	}
+	#nav-checkbox:checked ~ nav {
+		left: 0;
+	}
+	nav ul {
+
+	}
+	.nav {
+		margin-top: 45px;
+	}
+	.menu-button {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.close {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	.close img {
+		display: block;
+		width: 30px;
+		margin: 15px;
+		cursor: pointer;
+	}
+	.overlay {
 		display: none;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+	}
+	#nav-checkbox:checked ~ .overlay {
+		display: block;
 	}
 	main {
 		float: none;
