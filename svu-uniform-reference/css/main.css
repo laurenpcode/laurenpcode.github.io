@@ -29,7 +29,7 @@ nav {
 	float: left;
 	text-align: left;
 }
-.close, 
+.close-button svg, 
 .menu-button {
 	display: none;
 }
@@ -54,7 +54,7 @@ nav a {
 	color: white;
 }
 .nav a:hover {
-	color: blue;
+	color: dodgerblue;
 }
 #nav-checkbox {
 	position: fixed;
@@ -87,6 +87,7 @@ h2 {
 }
 header h3 {
 	display: none;
+	line-height: 1.5em;
 }
 p {
 
@@ -112,6 +113,8 @@ footer p a {
 	text-decoration: none;
 	color: rgba(0,0,0, .8);
 }
+
+/*MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY */
 @media (max-width: 699px) {
 	.wrapper {
 		width: 100%;
@@ -139,7 +142,7 @@ footer p a {
 		z-index: 100;
 		transition: all .2s ease;
 	}
-	#home {
+	.home {
 		display: none;
 	}
 	#nav-checkbox:checked ~ nav {
@@ -169,17 +172,25 @@ footer p a {
 		-ms-user-select: none;
 		user-select: none;
 	}
-	.close {
-		display: block;
-		position: absolute;
-		top: 10px;
-		right: 10px;
+	.close-button-wrapper {
+		position: relative;
 	}
-	.close img {
+	.close-button svg {
 		display: block;
 		width: 30px;
 		margin: 15px;
 		cursor: pointer;
+		text-align: right;
+		position: absolute;
+		top: 15px;
+		right: 15px
+	}
+	.close-button-wrapper {
+		padding: 6px;
+	}
+	.close-button-wrapper:hover > svg * {
+		fill: blue;
+		stroke-width: 2;
 	}
 	.overlay {
 		display: none;
