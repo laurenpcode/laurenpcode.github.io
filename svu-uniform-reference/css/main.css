@@ -139,6 +139,9 @@ footer p a {
 		z-index: 100;
 		transition: all .2s ease;
 	}
+	#home {
+		display: none;
+	}
 	#nav-checkbox:checked ~ nav {
 		left: 0;
 	}
