@@ -2,30 +2,15 @@ body {
 	margin-top: 0;
 	font-family: 'Lato', sans-serif;
 }
-.wrapper {
-	width: 90%;
-	background-color: #ddd;
-	margin-left: auto;
-	margin-right: auto;
-}
-header {
-	text-align: center;
-	background: #fff;
-	/*padding: 2em;*/
-}
-/*header img {
-	margin-top: 3%;
-	width: 6%;
-	height: auto;
-}*/
 header a {
 	text-decoration: none;
 }
 nav {
-	display: block;
+	position: fixed;
 	height: 100%;
 	width: 30%;
-	background-color: black;
+	overflow-y: auto;
+	background-color: rgba(0,0,0, 1);
 	float: left;
 	text-align: left;
 }
@@ -41,9 +26,6 @@ nav li {
 	padding-top: .5em;
 	padding-bottom: .5em;
 
-}
-nav a {
-	
 }
 .nav {
 	margin-top: 10px;
@@ -62,10 +44,11 @@ nav a {
 }
 main {
 	float: right;
-	width: 60%;
+	width: 65%;
 	margin-top: 10px;
-	margin-right: 5%;
-	margin-bottom: 50px;
+	margin-right: 2.5%;
+	margin-bottom: 20px;
+	text-align: center;
 }
 main h2 {
 	text-align: center;
@@ -74,16 +57,32 @@ main img {
 	max-width: 100%;
 }
 .h-1 {
-	padding-top: 2em;
+	padding-top: 1em;
 }
 h1 {
-	font-size: 2em;
+	font-size: 1.8em;
 	margin-top: 0;
 	margin-bottom: 0;
 }
+.h-1 a {
+	text-decoration: none;
+}
+.h-1 a:live {
+	color: black;
+}
+.h-1 a:visited {
+	color: black;
+}
+.h-1 a:hover,
+.h-1 a:focus {
+	color: blue;
+}
 h2 {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	margin-top: .3em;
+}
+h3 {
+	line-height: 1.4em;
 }
 header h3 {
 	display: none;
@@ -119,8 +118,8 @@ footer p a {
 	.wrapper {
 		width: 100%;
 	}
-	header h1,
-	header h2 {
+	main h1,
+	main h2 {
 		display: none;
 	}
 	header h3 {
@@ -131,9 +130,6 @@ footer p a {
 		padding-top: 1.5rem;
 	}
 	nav {
-		/*display: none;*/
-		position: fixed;
-		height: 100%;
 		width: 100%;
 		left: -100%;
 		text-align: left;
@@ -148,24 +144,11 @@ footer p a {
 	#nav-checkbox:checked ~ nav {
 		left: 0;
 	}
-
-.ny-times-hamburger {
-	display: block;
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		cursor: pointer;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-}
-
 	.menu-button {
 		display: block;
 		position: absolute;
-		top: 10px;
-		right: 10px;
+		top: 15px;
+		right: 15px;
 		cursor: pointer;
 		-webkit-user-select: none;
 		-moz-user-select: none;
