@@ -1,4 +1,5 @@
 body {
+	margin-top: 0;
 	font-family: 'Lato', sans-serif;
 }
 .wrapper {
@@ -7,20 +8,16 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
-.toolbar svg,
-.toolbar h3 {
-	display: none;
-}
 header {
 	text-align: center;
 	background: #fff;
 	/*padding: 2em;*/
 }
-header img {
+/*header img {
 	margin-top: 3%;
 	width: 6%;
 	height: auto;
-}
+}*/
 header a {
 	text-decoration: none;
 }
@@ -48,6 +45,9 @@ nav li {
 nav a {
 	
 }
+.nav {
+	margin-top: 10px;
+}
 .nav a, 
 .nav li {
 	text-decoration: none;
@@ -63,8 +63,9 @@ nav a {
 main {
 	float: right;
 	width: 60%;
-	margin-top: 150px;
+	margin-top: 10px;
 	margin-right: 5%;
+	margin-bottom: 50px;
 }
 main h2 {
 	text-align: center;
@@ -72,12 +73,16 @@ main h2 {
 main img {
 	max-width: 100%;
 }
+.h-1 {
+	padding-top: 2em;
+}
 h1 {
-	font-size: 2.5em;
+	font-size: 2em;
+	margin-top: 0;
 	margin-bottom: 0;
 }
 h2 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	margin-top: .3em;
 }
 header h3 {
@@ -106,21 +111,6 @@ footer {
 	.wrapper {
 		width: 100%;
 	}
-	.toolbar {
-		margin-bottom: 2em;
-	}
-	/*.toolbar svg, */
-	.toolbar h3 {
-		display: block;
-	}
-	.toolbar svg{
-		float: left;
-		vertical-align: bottom;
-	}
-	.toolbar h3 {
-		float: right;
-		margin: 0;
-	}
 	header h1,
 	header h2 {
 		display: none;
@@ -132,10 +122,10 @@ footer {
 		/*display: none;*/
 		position: fixed;
 		height: 100%;
-		width: 80%;
-		left: -80%;
+		width: 100%;
+		left: -100%;
 		text-align: left;
-		opacity: .8;
+		opacity: .85;
 		overflow-y: auto;
 		z-index: 100;
 		transition: all .2s ease;
@@ -143,12 +133,7 @@ footer {
 	#nav-checkbox:checked ~ nav {
 		left: 0;
 	}
-	nav ul {
 
-	}
-	.nav {
-		margin-top: 45px;
-	}
 	.menu-button {
 		display: block;
 		position: absolute;
