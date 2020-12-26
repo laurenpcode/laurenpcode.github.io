@@ -91,10 +91,9 @@ header h3 {
 p {
 
 }
-#jump-to a,
-#top a  {
+#jump-to a  {
 	text-decoration: none;
-	padding: 1em 2em;
+	padding: 1em;
 }
 #jump-to a:visited,
 #top a:visited  {
@@ -106,6 +105,12 @@ p {
 }
 footer {
 	clear: both;
+	text-align: center;
+	padding-bottom: 2em;
+}
+footer p a {
+	text-decoration: none;
+	color: rgba(0,0,0, .8);
 }
 @media (max-width: 699px) {
 	.wrapper {
@@ -117,6 +122,10 @@ footer {
 	}
 	header h3 {
 		display: block;
+		margin-top: 0;
+	}
+	.h-3 {
+		padding-top: 1.5rem;
 	}
 	nav {
 		/*display: none;*/
@@ -133,6 +142,18 @@ footer {
 	#nav-checkbox:checked ~ nav {
 		left: 0;
 	}
+
+.ny-times-hamburger {
+	display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+}
 
 	.menu-button {
 		display: block;
