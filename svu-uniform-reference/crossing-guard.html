@@ -15,6 +15,16 @@
 			color: white;
 			font-weight: bold;
 		}
+		.sub {
+			display: none;
+		}
+		.topic:hover {
+			color: dodgerblue;
+		}
+		.topic:hover .sub {
+			display: block;
+		}
+
 	</style>
 </head>
 <body>
@@ -38,13 +48,13 @@
 					</label>
 			<ul class="nav">
 				<li class="home"><a href="index.html">HOME</a></li>
-				<li>NYPD
+				<li class="topic">NYPD
 					<ul>
-						<li><a href="nypd-patrol.html">NYPD Patrol</a></li>
-						<li id="csu"><a href="csu.html">CSU</a></li>
-						<li><a href="taru.html">TARU</a></li>
-						<li id="esu"><a href="esu.html">ESU</a></li>
-						<li><a href="nypd-bike.html">NYPD Bike unit</a></li>
+						<li class="sub"><a href="nypd-patrol.html">NYPD Patrol</a></li>
+						<li id="csu" class="sub"><a href="csu.html">CSU</a></li>
+						<li><a href="taru.html" class="sub">TARU</a></li>
+						<li id="esu" class="sub"><a href="esu.html">ESU</a></li>
+						<li class="sub"><a href="nypd-bike.html">NYPD Bike unit</a></li>
 					</ul>
 				</li>
 				<li id="emt"><a href="emt.html">FDNY EMT/Paramedic</a></li>
@@ -119,9 +129,9 @@
 				<h3>NYC Crossing Guard</h3>
 			</div>
 			<img src="images/NYC CROSSING GUARD/Backround uniforms 59.jpeg" alt="">
-			<footer>
+			<div id="back-to-top">
 				<p><a href="#">Back to top</a></p>
-			</footer>
+			</div>
 		</main>
 	</div>
 </body>
