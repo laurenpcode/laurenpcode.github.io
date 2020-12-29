@@ -17,15 +17,24 @@
 		}
 		h1 {
 			display: inline-block;
-			padding: 1em 2em;
+			padding: .8em 1em;
 			margin-top: -1em;
-			margin-bottom: -2.5em;
+			margin-bottom: 0;
+			/*background: yellow;*/
+		}
+		h3 {
+			margin-top: -1rem;
+			/*background: green;*/
+		}
+		.h-3 {
+			padding-bottom: 0;
 		}
 		.titles {
 			position: fixed;
 			top: 0;
 			right: 0;
 			left: 33%;
+			padding-top: 1rem;
 			background: rgba(255,0,0, .5);
 			background: #fff;
 		}
@@ -47,7 +56,9 @@
 		.topic:active {
 			color: dodgerblue;
 		}
-		.topic:hover > .sub {
+		.topic:hover > .sub,
+		.topic:focus > .sub,
+		.topic:active > .sub {
 			display: block;
 		}
 		@media (min-width: 1100px) {
