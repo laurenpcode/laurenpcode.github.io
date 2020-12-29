@@ -45,7 +45,6 @@ nav li {
 main {
 	float: right;
 	width: 67%;
-	margin-top: 10px;
 	margin-right: 1%;
 	margin-bottom: 20px;
 	text-align: center;
@@ -55,7 +54,7 @@ main img {
 	width: 85%;
 }
 .h-1 {
-	padding-top: 1.8em;
+	padding-top: 1em;
 }
 h1 {
 	font-size: 1.8em;
@@ -79,12 +78,8 @@ h3 {
 	line-height: 1.4em;
 
 }
-header h3 {
-	display: none;
-	line-height: 1.5em;
-}
 .h-3 {
-	padding-bottom: 1.8rem;
+	padding-bottom: .5rem;
 }
 p {
 
