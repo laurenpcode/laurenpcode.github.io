@@ -52,7 +52,7 @@ main {
 	padding: 0;
 }
 main img {
-	max-width: 100%;
+	width: 85%;
 }
 .h-1 {
 	padding-top: 1.8em;
