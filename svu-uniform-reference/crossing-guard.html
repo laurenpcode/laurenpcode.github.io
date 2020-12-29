@@ -15,12 +15,19 @@
 			color: white;
 			font-weight: bold;
 		}
+		h1 {
+			display: inline-block;
+			padding: 1em 2em;
+			margin-top: -1em;
+			margin-bottom: -1em;
+		}
 		.titles {
 			position: fixed;
 			top: 0;
 			right: 0;
 			left: 33%;
 			background: rgba(255,0,0, .5);
+			background: #fff;
 		}
 	
 		.photo-content {
@@ -30,14 +37,17 @@
 			display: none;
 			transition: all .2s;
 		}
+		.topic {
+			display: inline-block;
+			padding: 1em;
+			margin: -1em;
+		}
 		.topic:hover,
 		.topic:focus,
 		.topic:active {
 			color: dodgerblue;
 		}
-		.topic:hover .sub,
-		.topic:focus .sub,
-		.topic:active .sub {
+		.topic:hover > .sub {
 			display: block;
 		}
 		@media (min-width: 1100px) {
@@ -79,12 +89,12 @@
 			<ul class="nav">
 				<li class="home"><a href="index.html">HOME</a></li>
 				<li class="topic">NYPD
-					<ul>
-						<li class="sub"><a href="nypd-patrol.html">NYPD Patrol</a></li>
-						<li id="csu" class="sub"><a href="csu.html">CSU</a></li>
-						<li><a href="taru.html" class="sub">TARU</a></li>
-						<li id="esu" class="sub"><a href="esu.html">ESU</a></li>
-						<li class="sub"><a href="nypd-bike.html">NYPD Bike unit</a></li>
+					<ul class="sub">
+						<li><a href="nypd-patrol.html">NYPD Patrol</a></li>
+						<li id="csu"><a href="csu.html">CSU</a></li>
+						<li><a href="taru.html">TARU</a></li>
+						<li id="esu"><a href="esu.html">ESU</a></li>
+						<li><a href="nypd-bike.html">NYPD Bike unit</a></li>
 					</ul>
 				</li>
 				<li id="emt"><a href="emt.html">FDNY EMT/Paramedic</a></li>
