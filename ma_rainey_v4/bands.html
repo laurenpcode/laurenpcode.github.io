@@ -9,67 +9,37 @@
 	<link rel="stylesheet" href="js/vendor/magnific/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 	<style>
-		header {
-			margin-bottom: 3rem;
-		}
-		nav {
-			display: none;
-			width: 0;
-		}
-		.header-wrapper-two {
+		.nav-and-checkbox-wrapper {
 			position: relative;
 		}
-		.header-wrapper-two a {
-			text-decoration: none;
-		}
-		.header-wrapper-two a h1 {
-			color: black;
-			padding-bottom: 0;
-			padding-left: -2rem;
-			transition-property: color;
-			transition-duration: .3s;
-		}
-		/*.header-wrapper-two a h1:hover {
-			color: #aaa;
-			border-bottom: 2px solid #aaa;
+		/*nav {
+			position: fixed;
+			width: 30%;
+			left: -30%;
+			height: 100%;
+			overflow-y: auto;
+			z-index: 10;
+			transition: all .2s ease;
 		}*/
-		.header-wrapper-two p {
-			color: black;
-			text-align: left;
+		h1 {
+		color: black;
+		padding-bottom: 0;
+		padding-left: -2rem;
+		transition: all ease .3s;
 		}
 		h1:hover {
-			border: 1px solid #aaa;
-			border-radius: .2em;
+		color: #aaa;
 		}
-		.menu-span {
-			padding-left: 1.5%;
+		h1-wrapper a {
+			padding: 2rem;
 		}
-		.menu-span:hover,
-		.menu-span:active {
-			color: #aaa;
-		}
-		.home-span {
-		float: right;
-		padding-right: 1.5%;
-		}
-		.home-span a:visited {
-			color: black;
-		}
-		.home-span a:hover,
-		.home-span a:active {
-			color: #aaa;
-		}
-		
 		.main-wrapper {
-			width: 95%;
+			width: 100%;
 			float: none;
+			padding-top: 1.5rem;
 			margin-left: auto;
 			margin-right: auto;
-		}
-		.main-wrapper p {
-			opacity: .8;
-			font-style: italic;
-			margin-bottom: 3rem;
+			background: #aaa;
 		}
 		.category {
 			background: #aaa;
@@ -77,41 +47,25 @@
 			padding: 0;
 			box-shadow: none;
 		}
-		.category h3 {
-			color: #222;
-		}
-		.category img {
-			border: 3px solid #333;
-			border-radius: 2px;
-		}
 		.bottom-of-main {
 			clear: both;
 			padding-bottom: 2rem;
-		}
-		.click-image p {
-			color: black;
 		}
 		img.mfp-img {
 			width: auto;
 			height: auto;
 		}
+
 	</style>
 </head>
 <body>
-	<div class="wrapper">
-		<header>
-			<div class="header-wrapper-one">
-				<div class="header-wrapper-two">
-					<div class="menu-home">
-						<p class="menu"><span class="menu-span">MENU</span><span class="home-span"><a href="index.html">HOME</a></span></p>
-					</div>
-					<div class="h1-wrapper">
-						<a href="index.html"><h1>Ma Rainey's <span>Black Bottom</span></h1></a>
-					</div>
-				</div> <!-- wrapper two -->
-			</div> <!-- wrapper one -->
-		</header>
+	<div class="nav-and-checkbox-wrapper">
+		<input id="nav-checkbox" type="checkbox">
+		<label for="nav-checkbox" class="overlay"></label>
 		<nav>
+			<label for="nav-checkbox" class="close-button">
+				<img src="images/close.svg" alt="close">
+			</label>
 			<div id="nav-wrapper">
 				<a href="index.html">Home</a>
 				<hr>
@@ -140,11 +94,30 @@
 				<a href="flashback.html">1907 Flashback</a>
 			</div>
 		</nav>
+	</div> <!-- nav-and-checkbox-wrapper -->
+	<div class="wrapper">
+		<header>
+			<div class="header-wrapper-one">
+				<div class="header-wrapper-two">
+					<label for="nav-checkbox">
+						<div class="menu-home">
+						<p class="menu"><span class="menu-span">MENU</span><span class="home-span"><a href="index.html">HOME</a></span></p>
+						</div>
+					</label>
+					<div class="h1-wrapper">
+						<a href="index.html"><h1>Ma Rainey's <span>Black Bottom</span></h1></a>
+					</div> 
+				</div> <!-- header-wrapper-two -->
+			</div> <!-- header-wrapper-one -->
+		</header>
+	</div> <!-- wrapper -->
 		<main>
 			<div class="main-wrapper">
-				<!-- <p>click on image to enlarge</p> -->
-					<div class="header-h2">
-						<h2><span class="h2-hidden-mobile">Costume Research - </span>Bands</h2>
+					<div class="page-topic">
+						<h2>Bands</h2>
+					</div>
+					<div class="click-image">
+						<p>(click image to enlarge)</p>
 					</div>
 					<div class="column" id="col-one">
 						<section>
@@ -228,9 +201,9 @@
 					</div> <!-- #col-four -->
 					
 					<div class="bottom-of-main">
-						<div class="click-image">
+						<!-- <div class="click-image">
 							<p>Click image to enlarge</p>
-						</div>
+						</div> -->
 						<p>Costume Research for Netflix Film directed by George C. Wolfe – Costume Designer: Ann Roth</p>
 					</div>
 				</div> <!-- main-wrapper -->
