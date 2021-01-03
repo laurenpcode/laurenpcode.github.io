@@ -30,12 +30,12 @@ header {
 }
 .header-wrapper-two {
 	border: 1px solid #ddd;
-	padding: 2%;
+	padding: 4%;
 	position: relative;
 }
 .header-wrapper-two a {
-			text-decoration: none;
-		}
+	text-decoration: none;
+}
 
 .header-wrapper-two h2 {
 	font-size: 1.6rem;
@@ -45,12 +45,12 @@ header {
 	padding-bottom: .2rem;
 }
 .header-wrapper-two p {
-			color: black;
-			text-align: left;
-		}
-.page-topic h2{
+	color: black;
+	text-align: left;
+}
+/*.page-topic h2{
 	color: rgba(0,0,0, .8);
-		}
+}*/
 h1 {
 	font-family: 'Chonburi', serif;
 	font-weight: normal;
@@ -69,23 +69,23 @@ h3 {
 	letter-spacing: 1.2px;
 }
 .menu-span {
-			padding-left: 1.5%;
-		}
-		.menu-span:hover,
-		.menu-span:active {
-			color: #aaa;
-		}
-		.home-span {
-		float: right;
-		padding-right: 1.5%;
-		}
-		.home-span a:visited {
-			color: black;
-		}
-		.home-span a:hover,
-		.home-span a:active {
-			color: #aaa;
-		}
+	padding-left: 1.5%;
+}
+.menu-span:hover,
+.menu-span:active {
+	color: #aaa;
+}
+.home-span {
+float: right;
+padding-right: 1.5%;
+}
+.home-span a:visited {
+	color: black;
+}
+.home-span a:hover,
+.home-span a:active {
+	color: #aaa;
+}
 nav {
 	text-align: center;
 	border: 1px solid #222;
@@ -137,7 +137,6 @@ nav hr {
 	margin: 2px auto;
 }
 .main-wrapper {
-	float: right;
 	text-align: center;
 	padding-top: 3rem;
 }
@@ -206,9 +205,9 @@ section a {
 	margin-bottom: 3rem;
 }
 .click-image p {
-			color: black;
-			margin-bottom: 2rem;
-		}
+	color: black;
+	margin-bottom: 2rem;
+}
 .page-topic h2 {
 	font-size: 1.5rem;
 	line-height: 2.25rem;
@@ -258,10 +257,6 @@ footer {
 
 /*breakpoint to go to two images per row*/
 @media (max-width: 975px) {
-	/*nav {
-		display: none;
-		width: 0;
-	}*/
 	.main-wrapper {
 		width: 95%;
 		float: none;
@@ -279,10 +274,10 @@ footer {
 	h2 {
 		font-size: 1.3rem;
 	}
-	nav {
+	/*nav {
 		width: 50%;
 		left: -50%;
-	}
+	}*/
 	#col-one,
 	#col-two,
 	#col-three,
@@ -305,10 +300,10 @@ footer {
 	header {
 		margin-bottom: 2rem;
 	}
-	nav {
+	/*nav {
 		width: 100%;
 		left: -100%;
-	}
+	}*/
 	.wrapper {
 		text-align: center;
 	}
@@ -318,6 +313,8 @@ footer {
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: -32px;
+
 	}
 	.h2-hidden-mobile {
 		display: none;
