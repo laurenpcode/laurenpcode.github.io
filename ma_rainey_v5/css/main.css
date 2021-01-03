@@ -30,7 +30,7 @@ header {
 }
 .header-wrapper-two {
 	border: 1px solid #ddd;
-	padding: 4%;
+	padding: 3%;
 	position: relative;
 }
 .header-wrapper-two a {
@@ -64,7 +64,6 @@ h1 {
 	transition: all ease .3s;
 }
 h1:hover {
-/*color: black;*/
 text-decoration: underline;
 }
 h1 span {
@@ -79,6 +78,7 @@ h3 {
 	letter-spacing: 1.2px;
 }
 .menu-span {
+	float: right;
 	padding-left: 1.5%;
 }
 .menu-span:hover,
@@ -86,8 +86,7 @@ h3 {
 	color: #aaa;
 }
 .home-span {
-float: right;
-padding-right: 1.5%;
+
 }
 .home-span a:visited {
 	color: black;
@@ -340,7 +339,6 @@ img.mfp-img {
 	}
 	.main-wrapper {
 		text-align: center;
-		float: none;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: -32px;
