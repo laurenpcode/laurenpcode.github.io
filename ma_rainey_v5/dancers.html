@@ -8,80 +8,19 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="js/vendor/magnific/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
-	<style>
-		header {
-			margin-bottom: 3rem;
-		}
-		nav {
-			display: none;
-			width: 0;
-		}
-		.header-wrapper-two a {
-			text-decoration: none;
-		}
-		.header-wrapper-two a h1 {
-			transition-property: color;
-			transition-duration: .5s;
-		}
-		.header-wrapper-two a h1:hover {
-			color: black;
-		}
-		.main-wrapper {
-			width: 95%;
-			float: none;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.main-wrapper p {
-			opacity: .8;
-			font-style: italic;
-			margin-bottom: 3rem;
-		}
-		.category {
-			background: #aaa;
-			width: 100%;
-			padding: 0;
-			box-shadow: none;
-		}
-		.category h3 {
-			color: #222;
-		}
-		.category img {
-			border: 3px solid #333;
-			border-radius: 2px;
-		}
-		.coin {
-			background: #aaa;
-			border: none;
-		}
-		.coin img {
-			border: none;
-		}
-		.bottom-of-main {
-			clear: both;
-			padding-bottom: 2rem;
-		}
-		img.mfp-img {
-			width: 40rem;
-			height: auto;
-		}
-	</style>
 </head>
 <body>
-	<div class="wrapper">
-		<header>
-			<div class="header-wrapper-one">
-				<div class="header-wrapper-two">
-					<a href="index.html"><h1>Ma Rainey's Black Bottom</h1></a>
-					<h2>Costume Research - Dancers</h2>
-				</div> <!-- wrapper two -->
-			</div> <!-- wrapper one -->
-		</header>
+	<div class="nav-and-checkbox-wrapper">
+		<input id="nav-checkbox" type="checkbox">
+		<label for="nav-checkbox" class="overlay"></label>
 		<nav>
+			<label for="nav-checkbox" class="close-button">
+				<img src="images/close.svg" alt="close">
+			</label>
 			<div id="nav-wrapper">
 				<a href="index.html">Home</a>
 				<hr>
-				<a href="ma.html">Ma Rainey</a>
+				<a href="ma-diff-style-js.html">Ma Rainey</a>
 				<hr>
 				<a href="bands.html">Bands</a>
 				<hr>
@@ -95,7 +34,11 @@
 				<hr>
 				<a href="children.html">Children</a>
 				<hr>
-				<a href="uniforms.html">Uniforms and Laborers</a>
+				<a href="uniforms.html">Staff Uniforms</a>
+				<hr>
+				<a href="police.html">Chicago Police</a>
+				<hr>
+				<a href="laborers.html">Laborers</a>
 				<hr>
 				<a href="chicago.html">Chicago</a>
 				<hr>
@@ -104,143 +47,144 @@
 				<a href="great-migration.html">The Great Migration</a>
 				<hr>
 				<a href="flashback.html">1907 Flashback</a>
+				<hr>
+				<a href="pdf.html">Download PDFs</a>
+				<hr>
 			</div>
 		</nav>
+	</div> <!-- nav-and-checkbox-wrapper -->
+	<div class="wrapper">
+		<header>
+			<div class="header-wrapper-one">
+				<div class="header-wrapper-two">
+					<label for="nav-checkbox">
+						<div class="menu-home">
+						<p class="menu"><span class="menu-span">MENU</span><span class="home-span"><a href="index.html">HOME</a></span></p>
+						</div>
+					</label>
+					<div class="h1-wrapper">
+						<a href="index.html"><h1>Ma Rainey's <span>Black Bottom</span></h1></a>
+					</div> 
+				</div> <!-- header-wrapper-two -->
+			</div> <!-- header-wrapper-one -->
+		</header>
+	</div> <!-- wrapper -->
 		<main>
 			<div class="main-wrapper">
-				<p>click on image to enlarge</p>
-					<div class="column" id="col-one">
-						<section>
-							<a href="index.html"><div class="section-wrapper coin category">
-								<img src="images/ma-rainey/ma-coin-225-aaa.jpg">
-								<h3>id="col-one"</h3>
-							</div></a>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/shuffle-along.jpeg"><img src="images/dancers/shuffle-along.jpeg" alt=""></a>
-								<h3>Shuffle Along</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/fringe-dresses-piano.jpeg"><img src="images/dancers/fringe-dresses-piano.jpeg" alt=""></a>
-								<h3>fringe</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/chorus-line2.jpeg"><img src="images/dancers/chorus-line2.jpeg" alt=""></a>
-								<h3>chorus line</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/showgirl.jpeg"><img src="images/dancers/showgirl.jpeg" alt=""></a>
-								<h3>show girl</h3>
-							</div>
-						</section>
-					</div> <!-- #col-one -->
-					<div class="column" id="col-two">
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/vaudeville-dancers.jpg"><img src="images/dancers/vaudeville-dancers.jpg" alt=""></a>
-								<h3>Vaudeville dancers</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/black-vaudeville-2.jpeg"><img src="images/dancers/black-vaudeville-2.jpeg" alt=""></a>
-								<h3>Vaudeville</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/chorus-line.jpeg"><img src="images/dancers/chorus-line.jpeg" alt=""></a>
-								<h3>Chorus line</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/show-girls.jpeg"><img src="images/dancers/show-girls.jpeg" alt=""></a>
-								<h3>Show girls</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/nightclub-footlights2.jpg"><img src="images/dancers/nightclub-footlights2.jpg" alt=""></a>
-								<h3>Nightclub</h3>
-							</div>
-						</section>
-					</div> <!-- #col-two -->
-					<div class="column" id="col-three">
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/effie-moore-dancers.jpeg"><img src="images/dancers/effie-moore-dancers.jpeg" alt=""></a>
-								<h3>Effie Moore Dancers</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/dancers-hula-skirts.jpeg"><img src="images/dancers/dancers-hula-skirts.jpeg" alt=""></a>
-								<h3>Hula skirts</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/dancers-stripes.jpeg"><img src="images/dancers/dancers-stripes.jpeg" alt=""></a>
-								<h3>striped costumes</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/pussycat-dolls.jpeg"><img src="images/dancers/pussycat-dolls.jpeg" alt=""></a>
-								<h3>Pussycat Dolls</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/big-hat-at-bar.jpeg"><img src="images/dancers/big-hat-at-bar.jpeg" alt=""></a>
-								<h3>Bar scene</h3>
-							</div>
-						</section>
-					</div> <!-- #col-three -->
-					<div class="column" id="col-four">
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/dancer-splits.jpeg"><img src="images/dancers/dancer-splits.jpeg" alt=""></a>
-								<h3>splits</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/black-vaudeville.jpeg"><img src="images/dancers/black-vaudeville.jpeg" alt=""></a>
-								<h3>Vaudeville troupe</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/dancers-with-ruffles.jpeg"><img src="images/dancers/dancers-with-ruffles.jpeg" alt=""></a>
-								<h3>dancers with ruffles</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/showgirls-with-wire-spiderweb.jpeg"><img src="images/dancers/showgirls-with-wire-spiderweb.jpeg" alt=""></a>
-								<h3>Show girls- spiderweb</h3>
-							</div>
-						</section>
-						<section>
-							<div class="section-wrapper category gallery">
-								<a href="images/dancers/smoking-at-bar.JPG"><img src="images/dancers/smoking-at-bar.JPG" alt=""></a>
-								<h3>Smoking at bar</h3>
-							</div>
-						</section>
-					</div> <!-- #col-four -->
-					<div class="bottom-of-main">
-						<p>Costume Research for Netflix Film directed by George C. Wolfe – Costume Designer: Ann Roth</p>
-					</div>
-				</div> <!-- main-wrapper -->
+				<div class="page-topic">
+					<h2>Dancers</h2>
+				</div>
+				<div class="click-image">
+					<p>(click image to enlarge)</p>
+				</div>
+				<div class="column" id="col-one">
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/vaudeville-dancers.jpg"><img src="images/dancers/vaudeville-dancers.jpg" alt=""></a>
+							<h3>Vaudeville dancers</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/fringe-dresses-piano.jpeg"><img src="images/dancers/fringe-dresses-piano.jpeg" alt=""></a>
+							<h3>fringe</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/chorus-line2.jpeg"><img src="images/dancers/chorus-line2.jpeg" alt=""></a>
+							<h3>chorus line</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/dancers-with-ruffles.jpeg"><img src="images/dancers/dancers-with-ruffles.jpeg" alt=""></a>
+							<h3>dancers with ruffles</h3>
+						</div>
+					</section>
+				</div> <!-- #col-one -->
+				<div class="column" id="col-two">
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/effie-moore-dancers.jpeg"><img src="images/dancers/effie-moore-dancers.jpeg" alt=""></a>
+							<h3>Effie Moore Dancers</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/black-vaudeville-2.jpeg"><img src="images/dancers/black-vaudeville-2.jpeg" alt=""></a>
+							<h3>Vaudeville</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/chorus-line.jpeg"><img src="images/dancers/chorus-line.jpeg" alt=""></a>
+							<h3>Chorus line</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/dancers-stripes.jpeg"><img src="images/dancers/dancers-stripes.jpeg" alt=""></a>
+							<h3>striped costumes</h3>
+						</div>
+					</section>
+				</div> <!-- #col-two -->
+				<div class="column" id="col-three">
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/shuffle-along.jpeg"><img src="images/dancers/shuffle-along.jpeg" alt=""></a>
+							<h3>Shuffle Along</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/dancers-hula-skirts.jpeg"><img src="images/dancers/dancers-hula-skirts.jpeg" alt=""></a>
+							<h3>Hula skirts</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/show-girls.jpeg"><img src="images/dancers/show-girls.jpeg" alt=""></a>
+							<h3>Show girls</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/big-hat-at-bar.jpeg"><img src="images/dancers/big-hat-at-bar.jpeg" alt=""></a>
+							<h3>Bar scene</h3>
+						</div>
+					</section>
+				</div> <!-- #col-three -->
+				<div class="column" id="col-four">
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/dancer-splits.jpeg"><img src="images/dancers/dancer-splits.jpeg" alt=""></a>
+							<h3>splits</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/black-vaudeville.jpeg"><img src="images/dancers/black-vaudeville.jpeg" alt=""></a>
+							<h3>Vaudeville troupe</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/showgirls-with-wire-spiderweb.jpeg"><img src="images/dancers/showgirls-with-wire-spiderweb.jpeg" alt=""></a>
+							<h3>Show girls- spiderweb</h3>
+						</div>
+					</section>
+					<section>
+						<div class="section-wrapper category gallery">
+							<a href="images/dancers/smoking-at-bar.JPG"><img src="images/dancers/smoking-at-bar.JPG" alt=""></a>
+							<h3>Smoking at bar</h3>
+						</div>
+					</section>
+				</div> <!-- #col-four -->
+				<div class="bottom-of-main">
+					<p>Costume Research for Netflix Film directed by George C. Wolfe – Costume Designer: Ann Roth</p>
+				</div>
+			</div> <!-- main-wrapper -->
 		</main>
 		<footer>
 		</footer>

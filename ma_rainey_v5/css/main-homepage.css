@@ -107,7 +107,7 @@ section a {
 	transition: all 600ms;
 }
 .home-page:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transform-origin: center;
 }
 .home-page h3 {
