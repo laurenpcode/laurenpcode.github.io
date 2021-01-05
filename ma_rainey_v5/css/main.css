@@ -121,8 +121,8 @@ nav img {
 }
 nav {
 	position: fixed;
-	width: 350px;
-	left: -350px;
+	width: 380px;
+	left: -380px;
 	height: 100%;
 	overflow-y: auto;
 	z-index: 10;
