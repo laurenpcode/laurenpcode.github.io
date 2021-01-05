@@ -89,13 +89,14 @@ h3 {
 .menu-span:active {
 	color: #aaa;
 }
-.home-span {
-	
+.home-span a:live {
+	color: black;
 }
 .home-span a:visited {
 	color: black;
 }
 .home-span a:hover,
+.home-span a:focus,
 .home-span a:active {
 	color: #aaa;
 }
