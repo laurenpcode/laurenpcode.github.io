@@ -3,8 +3,6 @@ html { box-sizing: border-box; }
 
 .wrapper {
 	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
 	background: #aaa;
 }
 body {
@@ -48,9 +46,6 @@ header {
 	color: black;
 	text-align: left;
 }
-/*.page-topic h2{
-	color: rgba(0,0,0, .8);
-}*/
 h1 {
 	font-family: 'Chonburi', serif;
 	color: #aaa;
@@ -77,16 +72,25 @@ h3 {
 	font-weight: 700;
 	letter-spacing: 1.2px;
 }
+.menu {
+	font-size: 1.3rem;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}	
 .menu-span {
 	float: right;
 	padding-left: 1.5%;
 }
+
 .menu-span:hover,
 .menu-span:active {
 	color: #aaa;
 }
 .home-span {
-
+	
 }
 .home-span a:visited {
 	color: black;
@@ -205,10 +209,6 @@ section a {
 	padding: 0;
 	box-shadow: none;
 }
-/*.coin img {
-	border: 2px solid rgba(0,0,0, .3);
-	border-radius: 2px;
-}*/
 #col-one,
 #col-two,
 #col-three,
@@ -236,13 +236,6 @@ section a {
 	font-size: 1.5rem;
 	line-height: 2.25rem;
 }
-.menu {
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}	
 .overlay {
 	display: none;
 	position: fixed;
@@ -281,6 +274,16 @@ img.mfp-img {
 		}
 /*======M===E===D===I===A======Q===U===E===R===I===E===S=============*/
 /*adjust text of h3 uniforms-laborers*/
+@media (min-width:900px)  {
+	.main-wrapper {
+		padding-right: 3rem;
+		padding-left: 3rem;
+	}
+	.header-wrapper-one {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
 @media (max-width: 1405px){
 	#uniforms-and {
 		display: none;
@@ -288,13 +291,10 @@ img.mfp-img {
 
 /*breakpoint to go to two images per row*/
 @media (max-width: 975px) {
-	.main-wrapper {
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
+	.menu {
+		font-size: 1rem;
 	}
 }
-
 
 @media (max-width: 836px) {
 	h1 {
@@ -324,7 +324,6 @@ img.mfp-img {
 	}
 }
 
-
 /*media query to go to one image per row*/
 @media (max-width: 600px) {
 	header {
@@ -338,16 +337,8 @@ img.mfp-img {
 		text-align: center;
 	}
 	.main-wrapper {
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
 		margin-top: -32px;
-
 	}
-	.h2-hidden-mobile {
-		display: none;
-	}
-
 	h1 {
 		font-size: 1.5rem;
 		line-height: 2rem;
@@ -370,9 +361,6 @@ img.mfp-img {
 	div section {
 		margin-right: auto;
 		margin-left: auto;
-	}
-	#uniforms-and {
-		display: inline;
 	}
 	.bottom-of-main {
 		padding-bottom: 3rem;
