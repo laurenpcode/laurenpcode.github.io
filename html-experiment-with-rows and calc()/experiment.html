@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>rows instead of columns</title>
+	<link rel="stylesheet" href="js/vendor/magnific/magnific-popup.css">
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+		#wrapper {
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			background-color: #ccc;
+			border: solid blue 2px;
+		}
+		header {
+			background: pink;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		nav	{
+			background: orange;
+		}
+		nav li {
+			display: inline-block;
+			padding: 16px;
+		}
+		nav a {
+			text-decoration: none;
+			color: black;
+		}
+		.row:last-child {
+			margin-bottom: 4rem;
+		}
+		.row section {
+			display: inline-block;
+			width: calc( (100% - 20rem) / 4 );
+			margin: 2rem 0;
+		}
+		.row section:not(:last-child) {
+			margin-right: 4rem;
+		}
+		#row-one section {
+			background-color: yellow;
+			border: 2px solid red;
+			margin-top: 4rem;
+		}
+		
+		#row-two section {
+			color: white;
+			background-color: blue;
+			border: 2px solid red;
+		}
+		#row-three section {
+			color: white;
+			background-color: green;
+			border: 2px solid red;
+		}
+		section img {
+			width: 100%;
+		}
+		img.mfp-img {
+					width: auto;
+					height: auto;
+				}
+		@media (max-width: 900px) {
+			header {
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
+			.row section {
+				display: inline-block;
+				width: calc( (100% - 12rem) / 2 );
+			}
+			.row section:first-child {
+				margin-left: 3.5rem;
+			}
+			.row section:not(:last-child) {
+				margin-right: 3.5rem;
+			}
+		}
+		@media (max-width: 600px) {
+		#wrapper {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 1rem;
+		}
+		.row {
+
+		}
+		.row section {
+			float: none;
+			width: 90%;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 1rem;
+		}
+		.row section:first-child {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.row section:nth-child(2) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		.row section:nth-child(3) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		.row section:last-child {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div>
+				<h1>HTML Experiment in Row Structure</h1>
+			</div>
+			
+		</header>
+		<!-- <nav>
+			<ul>
+				<li><a href="#">nav item 1</a></li>
+				<li><a href="#">nav item 2</a></li>
+				<li><a href="#">nav item 3</a></li>
+				<li><a href="#">nav item 3</a></li>
+			</ul>
+		</nav> -->
+		<main>
+			<div class="row" id="row-one">
+				<section class="col-one gallery">
+					<a href="images/fur-stole-cloche.png" title="row one / col-1"><img src="images/fur-stole-cloche.png" alt=""></a>
+					<p>Row one</p>
+					<p>col-1</p>
+				</section><!-- 
+				 --><section class="col-two gallery">
+					<a href="images/drop-waist-dress-glasses.jpeg" title="row one / col-2"><img src="images/drop-waist-dress-glasses.jpeg" alt=""></a>
+					<p>Row one</p>
+					<p>col-2</p>
+				</section><!-- 
+				 --><section class="col-three gallery">
+					<a href="images/woman-beads-glasses.png" title="row one / col-3"><img src="images/woman-beads-glasses.png" alt=""></a>
+					<p>Row one</p>
+					<p>col-3</p>
+				</section><!-- 
+				 --><section class="col-four gallery">
+					<a href="images/white-short-sleeve-jumper.jpeg" title="row one / col-4"><img src="images/white-short-sleeve-jumper.jpeg" alt=""></a>
+					<p>Row one</p>
+					<p>col-4</p>
+				</section>
+			</div>
+			<div class="row" id="row-two">
+				<section class="col-one gallery">
+					<a href="images/garter-belt.jpeg" title="row two / col-1"><img src="images/garter-belt.jpeg" alt=""></a>
+					<p>Row two</p>
+					<p>col-1</p>
+				</section><!-- 
+				 --><section class="col-two gallery">
+					<a href="images/eyelet-ruffle-collar.jpeg" title="row two / col-2"><img src="images/eyelet-ruffle-collar.jpeg" alt=""></a>
+					<p>Row two</p>
+					<p>col-2</p>
+				</section><!-- 
+				 --><section class="col-three gallery">
+					<a href="images/four-ladies.jpeg" title="row two / col-3"><img src="images/four-ladies.jpeg" alt=""></a>
+					<p>Row two</p>
+					<p>col-3</p>
+				</section><!-- 
+				 --><section class="col-four gallery">
+					<a href="images/medallion-necklace.jpeg" title="row two / col-4"><img src="images/medallion-necklace.jpeg" alt=""></a>
+					<p>Row two</p>
+					<p>col-4</p>
+				</section>
+			</div>
+			<div class="row" id="row-three">
+				<section class="col-one gallery">
+					<a href="images/lunch-counter.jpeg" title="row three /col-1"><img src="images/lunch-counter.jpeg" alt=""></a>
+					<p>Row three</p>
+					<p>col-1</p>
+				</section><!-- 
+				 --><section class="col-two gallery">
+					<a href="images/women-coats-on-steps.png" title="row three / col-2"><img src="images/women-coats-on-steps.png" alt=""></a>
+					<p>Row three</p>
+					<p>col-2</p>
+				</section><!-- 
+				 --><section class="col-three gallery">
+					<a href="images/women-in-front-of-car.jpeg" title="row three/ col-3"><img src="images/women-in-front-of-car.jpeg" alt=""></a>
+					<p>Row three</p>
+					<p>col-3</p>
+				</section><!-- 
+				 --><section class="col-four gallery">
+					<a href="images/feather-hat.jpeg" title="row three / col-4"><img src="images/feather-hat.jpeg" alt=""></a>
+					<p>Row three</p>
+					<p>col-4</p>
+				</section>
+			</div>
+		</main>
+	</div>
+	<script src="js/vendor/jquery-2.1.0.min.js"></script>
+	<script src="js/vendor/magnific/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
