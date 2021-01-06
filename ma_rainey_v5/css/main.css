@@ -92,41 +92,28 @@ h3 {
 .home-span a:live {
 	color: black;
 }
-.home-span a:visited {
+/*.home-span a:visited {
 	color: black;
-}
+}*/
 .home-span a:hover,
 .home-span a:focus,
 .home-span a:active {
 	color: #aaa;
 }
+.menu a:visited {
+	color: black;
+}
 nav {
 	text-align: center;
 	border: 1px solid #222;
-	position: relative;
-}
-nav img {
-	position: absolute;
-	top: 10px;
-	right: 15px;
-}
-.close-button img {
-	width: 30px;
-	margin: 15px;
-	margin-bottom: 20px;
-	cursor: pointer;
-}	
-#nav-wrapper {
-	height: 100%;
-}
-nav {
 	position: fixed;
-	width: 380px;
-	left: -380px;
+	width: 415px;
+	left: -415px;
 	height: 100%;
 	overflow-y: auto;
 	z-index: 10;
 	transition: all .2s ease;
+	/*position: relative;*/
 }
 nav a {
 	font-weight: 700;
@@ -149,6 +136,20 @@ nav a:hover {
 nav hr {
 	width: 80%;
 	margin: 2px auto;
+}
+nav img {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+.close-button img {
+	width: 30px;
+	margin: 15px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}	
+#nav-wrapper {
+	height: 100%;
 }
 .main-wrapper {
 	text-align: center;
