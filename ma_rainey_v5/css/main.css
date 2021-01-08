@@ -89,20 +89,19 @@ h3 {
 .menu-span:active {
 	color: #aaa;
 }
-.home-span a:live {
+.home-span a:link,
+.home-span a:visited {
 	color: black;
 }
-/*.home-span a:visited {
-	color: black;
-}*/
 .home-span a:hover,
 .home-span a:focus,
 .home-span a:active {
 	color: #aaa;
 }
-.menu a:visited {
+/*.menu a:visited {
 	color: black;
-}
+}*/
+
 nav {
 	text-align: center;
 	border: 1px solid #222;
