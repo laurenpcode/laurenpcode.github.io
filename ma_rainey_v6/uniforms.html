@@ -9,24 +9,17 @@
 	<link rel="stylesheet" href="js/vendor/magnific/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 	<style>
-		main p {
+		.main-wrapper p {
 			margin-top: 2rem;
+			margin-bottom: 4rem;
 		}
-		.column {
-			margin-top: 2rem;
+		.row section {
+			display: inline-block;
+			width: calc( (100% - 24rem) / 3 );
+			padding-bottom: 5%;
 		}
-		#col-one,
-		#col-two,
-		#col-three {
-			width: 32%;
-			float: left;
-			margin-bottom: 5rem;
-		}
-		#col-one {
-			margin-left: 4%;
-		}
-		.column section img {
-			width: 80%;
+		.row section:not(:last-child) {
+			margin-right: 6rem;
 		}
 	</style>
 </head>
@@ -93,35 +86,33 @@
 		<main>
 			<div class="main-wrapper">
 				<p>Click on image to go to page</p>
-					<div class="column" id="col-one">
-						<section class="home-page">
+				<div class="row" id="row-one">
+					<section class="col-one gallery">
+						<div class="section-wrapper category gallery">
+							<a href="service-uniforms.html">
+								<img src="images/uniforms-laborers-police/staff uniforms/maid-apron-collar.png" alt="">
+							</a>
+							<h3>Staff Uniforms</h3>
+						</div>
+					</section><!-- 
+					 --><section class="col-two gallery">
 							<div class="section-wrapper category gallery">
-								<a href="service-uniforms.html"><img src="images/uniforms-laborers-police/staff uniforms/maid-apron-collar.png" alt=""></a>
-								<h3>Staff Uniforms</h3>
-							</div>
-						</section>
-					</div> <!-- #col-one -->
-					<div class="column" id="col-two">
-						<section class="home-page">
-							<div class="section-wrapper category gallery">
-								<a href="laborers.html"><img src="images/uniforms-laborers-police/laborers/overalls-cut-off-sleeves.jpeg.jpg" alt=""></a>
+								<a href="laborers.html">
+								<img src="images/uniforms-laborers-police/laborers/overalls-cut-off-sleeves.jpeg.jpg" alt="">
+								</a>
 								<h3>Laborers</h3>
 							</div>
-						</section>
-					</div> <!-- #col-two -->
-					<div class="column" id="col-three">
-						<section class="home-page">
-							<div class="section-wrapper category gallery">
-								<a href="police.html"><img src="images/police/cop-arresting-woman.jpeg" alt=""></a>
-								<h3>Chicago Police</h3>
-							</div>
-						</section>
-					</div> <!-- #col-three -->
-					<!-- <div class="column" id="col-four">
-						
-					</div>  -->
-					<div class="bottom-of-main">
-						<p>Costume Research for Netflix Film directed by George C. Wolfe – Costume Designer: Ann Roth</p>
+					</section><!-- 
+					 --><section class="col-three gallery">
+						<div class="section-wrapper category gallery">
+							<a href="police.html">
+							<img src="images/police/cop-arresting-woman.jpeg" alt="">
+							</a>
+							<h3>Chicago Police</h3>
+						</div>
+				</div>
+				<div class="bottom-of-main">
+					<p>Costume Research for Netflix Film directed by George C. Wolfe – Costume Designer: Ann Roth</p>
 					</div>
 				</div> <!-- main-wrapper -->
 		</main>
