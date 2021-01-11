@@ -18,8 +18,50 @@
 			width: calc( (100% - 24rem) / 3 );
 			padding-bottom: 5%;
 		}
-		.row section:not(:last-child) {
+		.row section:first-child {
+			margin-left: 6rem;
+			margin-right: 3rem;
+		}
+		.row section:nth-child(2) {
+			margin-left: 3rem;
+			margin-right: 3rem;	
+		}
+		.row section:last-child {
+			margin-left: 3rem;
 			margin-right: 6rem;
+		}
+		@media (max-width: 820px) {
+			.main-wrapper {
+				padding-right: 0;
+				padding-left: 0;
+			}
+			.row section {
+				vertical-align: top;
+			}
+			h3 {
+				font-size: 1rem;
+			}
+		}
+		@media (max-width: 600px) {
+			.row section {
+				width: calc( (100% - 6rem) );
+			}
+			.row section:first-child {
+				margin-left: 3rem;
+				margin-right: 3rem;
+			}
+			.row section:nth-child(2) {
+				margin-left: 3rem;
+				margin-right: 3rem;	
+			}
+			.row section:last-child {
+				margin-left: 3rem;
+				margin-right: 3rem;
+			}
+			.bottom-of-main p {
+				margin-left: 3rem;
+				margin-right: 3rem;
+			}
 		}
 	</style>
 </head>
@@ -87,24 +129,24 @@
 			<div class="main-wrapper">
 				<p>Click on image to go to page</p>
 				<div class="row" id="row-one">
-					<section class="col-one gallery">
-						<div class="section-wrapper category gallery">
+					<section class="col-one">
+						<div class="section-wrapper category">
 							<a href="service-uniforms.html">
 								<img src="images/uniforms-laborers-police/staff uniforms/maid-apron-collar.png" alt="">
 							</a>
 							<h3>Staff Uniforms</h3>
 						</div>
 					</section><!-- 
-					 --><section class="col-two gallery">
-							<div class="section-wrapper category gallery">
+					 --><section class="col-two">
+							<div class="section-wrapper category">
 								<a href="laborers.html">
 								<img src="images/uniforms-laborers-police/laborers/overalls-cut-off-sleeves.jpeg.jpg" alt="">
 								</a>
 								<h3>Laborers</h3>
 							</div>
 					</section><!-- 
-					 --><section class="col-three gallery">
-						<div class="section-wrapper category gallery">
+					 --><section class="col-three">
+						<div class="section-wrapper category">
 							<a href="police.html">
 							<img src="images/police/cop-arresting-woman.jpeg" alt="">
 							</a>
@@ -112,7 +154,7 @@
 						</div>
 				</div>
 				<div class="bottom-of-main">
-					<p>Costume Research for Netflix Film directed by George C. Wolfe – Costume Designer: Ann Roth</p>
+					<p>Costume Research for Netflix Film <br>Directed by George C. Wolfe – <br>Costume Designer: Ann Roth</p>
 					</div>
 				</div> <!-- main-wrapper -->
 		</main>

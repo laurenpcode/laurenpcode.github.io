@@ -276,6 +276,17 @@ img.mfp-img {
 	.menu {
 		font-size: 1rem;
 	}
+	.row section {
+		display: inline-block;
+		width: calc( (100% - 9rem) / 2 );
+		padding-bottom: 2%;
+	}
+	.row section:first-child {
+		margin-left: 3rem;
+	}
+	.row section:not(:last-child) {
+		margin-right: 3rem;
+	}
 }
 
 @media (max-width: 836px) {
@@ -306,6 +317,29 @@ img.mfp-img {
 	}
 	.main-wrapper {
 		margin-top: -32px;
+		min-width: 275px;
+	}
+	.row:last-child {
+		margin-bottom: 0;
+	}
+	.row section {
+		width: calc(100% - 6rem);
+	}
+	.row section:first-child {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.row section:nth-child(2) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	.row section:nth-child(3) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	.row section:last-child {
+		margin-left: auto;
+		margin-right: auto;
 	}
 	h1 {
 		font-size: 1.5rem;
