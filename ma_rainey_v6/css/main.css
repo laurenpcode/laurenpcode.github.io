@@ -185,6 +185,7 @@ nav img {
 }
 .row section {
 	display: inline-block;
+	vertical-align: top;
 	width: calc( (100% - 15rem) / 4 );
 	padding-bottom: 5%;
 }
