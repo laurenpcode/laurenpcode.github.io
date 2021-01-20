@@ -14,10 +14,14 @@
 		.toolbar {
 			background-color: black;
 			color: #fff;
-			position: relative;
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
 		}
 		.toolbar h2 {
 			display: inline-block;
+			font-size: 1.5rem;
 			margin-left: 1rem;
 		}
 		.toolbar .menu-button {
@@ -26,11 +30,18 @@
 			margin-top: 1rem;
 			display: inline-block;
 		}
+		.toolbar svg {
+			height: 1.5rem;
+			vertical-align: middle;
+		}
 		.toolbar svg * {
-			stroke: white;
+			/*stroke: white;*/
 			fill: white;
 		}
-		.toolbar  h2 span {
+		.toolbar h2 span:first-child {
+			display: inline;
+		}
+		.toolbar  h2 span:last-child {
 			display: none;
 		}
 		.logo-wrapper {
@@ -38,17 +49,18 @@
 			width: 80%;
 			margin-right: auto;
 			margin-left: auto;
-			margin-top: 2rem;
+			margin-top: 6rem;
 			margin-bottom: 2rem;
 		}
 		.logo-wrapper img {
 			width: 100%;
-			max-width: 800px;
+			max-width: 500px;
 		}
 		.hero {
 			height: 150vw;
 			background-image: url(images/home-page/nypd-times-square.jpeg);
 			background-position: center center;
+			background-size: cover;
 			background-repeat: no-repeat;
 		}
 		nav {
@@ -68,9 +80,6 @@
 		}
 		.menu-button {
 			display: block;
-			position: absolute;
-			top: 15px;
-			right: 15px;
 			cursor: pointer;
 			-webkit-user-select: none;
 			-moz-user-select: none;
@@ -110,7 +119,10 @@
 			.hero {
 				height: 50vw;
 			}
-			.toolbar  h2 span {
+			.toolbar h2 span:first-child {
+				display: none;
+			}
+			.toolbar  h2 span:last-child {
 				display: inline;
 			}
 		}
@@ -209,7 +221,7 @@
 				</ul>
 			</nav>
 		<h2>
-			UNIFORM <span id="reference">  REFERENCE</span>
+			UNIFORM<span>S</span><span>  REFERENCE</span>
 		</h2>
 	</div>
 	<div>
