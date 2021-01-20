@@ -7,91 +7,218 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<style>
+		nav {
+			left: -2000px;
+		}
+		.toolbar {
+			background-color: black;
+			color: #fff;
+			position: relative;
+		}
+		.toolbar h2 {
+			display: inline-block;
+			margin-left: 1rem;
+		}
+		.toolbar .menu-button {
+			float: right;
+			margin-right: 1rem;
+			margin-top: 1rem;
+			display: inline-block;
+		}
+		.toolbar svg * {
+			stroke: white;
+			fill: white;
+		}
+		.toolbar  h2 span {
+			display: none;
+		}
+		.logo-wrapper {
+			text-align: center;
+			width: 80%;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+		.logo-wrapper img {
+			width: 100%;
+			max-width: 800px;
+		}
+		.hero {
+			height: 150vw;
+			background-image: url(images/home-page/nypd-times-square.jpeg);
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		nav {
+			width: 100%;
+			left: -100%;
+			text-align: left;
+			opacity: .98;
+			overflow-y: auto;
+			z-index: 100;
+			transition: all .2s ease;
+		}
+		.home {
+			display: none;
+		}
+		#nav-checkbox:checked ~ nav {
+			left: 0;
+		}
+		.menu-button {
+			display: block;
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.close-button-wrapper {
+			position: relative;
+		}
+		.close-button svg {
+			display: block;
+			width: 30px;
+			margin: 15px;
+			cursor: pointer;
+			text-align: right;
+			position: absolute;
+			top: 15px;
+			right: 15px
+		}
+		.close-button-wrapper {
+			padding: 6px;
+		}
+		.close-button-wrapper:hover > svg * {
+			fill: blue;
+			stroke-width: 2;
+		}
+		.overlay {
+			display: none;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+		}
+		#nav-checkbox:checked ~ .overlay {
+			display: block;
+		}
+		@media (min-width: 860px) {
+			.hero {
+				height: 75vw;
+			}
+			.toolbar  h2 span {
+				display: inline;
+			}
+		}
+	</style>
 </head>
 <body>
-	<header>
-		<h1>LAW AND ORDER SVU</h1>
-		<h2>Uniform Reference</h2>
-	</header>
-	<div class="wrapper">
-		<nav>
-			<ul class="nav">
-				<li>NYPD
-					<ul>
-						<li><a href="nypd-patrol.html">NYPD Patrol</a></li>
-						<li><a href="csu.html">CSU</a></li>
-						<li><a href="taru.html">TARU</a></li>
-						<li><a href="esu.html">ESU</a></li>
-						<li><a href="nypd-bike.html">NYPD Bike unit</a></li>
-
-					</ul>
-				</li>
-				<li><a href="emt.html">FDNY EMT/Paramedic</a></li>
-				<li><a href="ocme.html">OCME</a></li>
-				<li>NYS COURT
-					<ul>
-						<li><a href="court-int.html">Interior</a></li>
-						<li><a href="court-ext.html">Exterior</a></li>
-					</ul>
-				</li>
-				<li>RIKERS/GREENHAVEN
-					<ul>
-						<li><a href="rikers.html">Rikers</a></li>
-						<li><a href="greenhaven.html">NYS Prison "Greenhaven"</a></li>
-					</ul>
-				</li>
-				<li>NYC
-					<ul>
-						<li><a href="crossing-guard.html">NYC Crossing Guard</a></li>
-						<li><a href="das.html">NYC DAS</a></li>
-					</ul>
-				</li>
-				<li>FEDERAL
-					<ul>
-						<li><a href="ice.html">ICE</a></li>
-						<li><a href="jttf.html">JTTF- Joint Terrorism TAsk Force</a></li>
-						<li><a href="secret-service.html">Secret Service</a></li>
-						<li><a href="military.html">US Military</a></li>
-					</ul>
-				</li>
-				<li>HOSPITAL
-					<ul>
-						<li><a href="doctors.html">Doctors</a></li>
-						<li><a href="nurses.html">Nurses</a></li>
-						<li><a href="mercy-security.html">Mercy Hospital Security</a></li>
-					</ul>
-				</li>
-				<li>SECURITY
-					<ul>
-						<li><a href="hudson-u-security.html">Hudson University Securit</a></li>
-						<li><a href="school-security.html">School Security</a></li>
-						<li><a href="mercy-security.html">Mercy Hospital Security</a></li>
-						<li><a href="museum-security.html">AMNH Museum Security</a></li>
-						<li><a href="mall-security.html">Mall Security</a></li>
-					</ul>
-				</li>
-				<li>RESTAURANT AND HOTEL
-					<ul>
-						<li><a href="benson-doorman.html">Benson's Doorman</a></li>
-						<li><a href="forlini.html">Forlinis</a></li>
-						<li><a href="maxwell.html">Maxwells</a></li>
-						<li><a href="square.html">Square Diner</a></li>
-						<li><a href="restaurant-20007.html">Restaurant Episode 20007</a></li>
-						<li><a href="dutchess-hotel.html">Dutchess Hotel</a></li>
-						<li><a href="airline.html">Airline</a></li>
-					</ul>
-				</li>
-				<li>OTHER LAW ENFORCEMENT
-					<ul>
-						<li><a href="ridgewood-nj.html">Ridgweood NJ PD</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-		<main>
-			<h2>main content</h2>
-		</main>
-		<footer>footer</footer>
+	<div class="toolbar">
+		<input id="nav-checkbox" type="checkbox">
+			<label for="nav-checkbox" class="menu-button">
+				<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+				</rect>
+				</svg>
+			</label>
+			<label for="nav-checkbox" class="overlay"></label>
+			<nav>
+				<label for="nav-checkbox" class="close-button">
+					<div class="close-button-wrapper">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.5 31.5">
+							<circle fill="none" stroke="#FFFFFF" stroke-width="1.5193" stroke-miterlimit="10" cx="15.8" cy="15.8" r="15"/>
+							<line fill="none" stroke="#FFFFFF" stroke-width="1.5193" stroke-miterlimit="10" x1="8.9" y1="8.9" x2="23.2" y2="23.2"/>
+							<line fill="none" stroke="#FFFFFF" stroke-width="1.5193" stroke-miterlimit="10" x1="8.9" y1="23.2" x2="23.2" y2="8.9"/>
+						</svg>
+					</div>
+				</label>
+				<ul class="nav">
+					<li class="home"><a href="index.html">HOME</a></li>
+					<li>NYPD
+						<ul>
+							<li><a href="nypd-patrol.html">NYPD Patrol</a></li>
+							<li><a href="csu.html">CSU</a></li>
+							<li><a href="taru.html">TARU</a></li>
+							<li id="esu"><a href="esu.html">ESU</a></li>
+							<li><a href="nypd-bike.html">NYPD Bike unit</a></li>
+						</ul>
+					</li>
+					<li id="emt"><a href="emt.html">FDNY EMT/Paramedic</a></li>
+					<li><a href="ocme.html">OCME</a></li>
+					<li>NYS COURT
+						<ul>
+							<li><a href="court-int.html">Interior</a></li>
+							<li id="court-ext"><a href="court-ext.html">Exterior</a></li>
+						</ul>
+					</li>
+					<li>RIKERS/GREENHAVEN
+						<ul>
+							<li><a href="rikers.html">Rikers</a></li>
+							<li><a href="greenhaven.html">NYS Prison "Greenhaven"</a></li>
+						</ul>
+					</li>
+					<li>NYC
+						<ul>
+							<li id="crossing-guard"><a href="crossing-guard.html">NYC Crossing Guard</a></li>
+							<li><a href="das.html">NYC DCAS</a></li>
+						</ul>
+					</li>
+					<li>FEDERAL
+						<ul>
+							<li><a href="ice.html">ICE</a></li>
+							<li><a href="jttf.html">JTTF- Joint Terrorism Task Force</a></li>
+							<li><a href="secret-service.html">Secret Service</a></li>
+							<li><a href="military.html">US Military</a></li>
+						</ul>
+					</li>
+					<li>HOSPITAL
+						<ul>
+							<li><a href="doctors.html">Doctors</a></li>
+							<li><a href="nurses.html">Nurses</a></li>
+							<li><a href="mercy-security.html">Mercy Hospital Security</a></li>
+						</ul>
+					</li>
+					<li>SECURITY
+						<ul>
+							<li><a href="hudson-u-security.html">Hudson University Security</a></li>
+							<li><a href="school-security.html">School Security</a></li>
+							<li><a href="mercy-security.html">Mercy Hospital Security</a></li>
+							<li><a href="museum-security.html">AMNH Museum Security</a></li>
+							<li><a href="mall-security.html">Mall Security</a></li>
+						</ul>
+					</li>
+					<li>RESTAURANT AND HOTEL
+						<ul>
+							<li><a href="benson-doorman.html">Benson's Doorman</a></li>
+							<li><a href="forlini.html">Forlinis</a></li>
+							<li><a href="maxwell.html">Maxwells</a></li>
+							<li><a href="square.html">Square Diner</a></li>
+							<li><a href="restaurant-20007.html">Restaurant Episode 20007</a></li>
+							<li><a href="dutchess-hotel.html">Dutchess Hotel</a></li>
+							<li><a href="airline.html">Airline</a></li>
+						</ul>
+					</li>
+					<li>OTHER LAW ENFORCEMENT
+						<ul>
+							<li><a href="ridgewood-nj.html">Ridgweood NJ PD</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		<h2>
+			UNIFORM <span id="reference">  REFERENCE</span>
+		</h2>
+	</div>
+	<div>
+		<div class="logo-wrapper">
+			<img src="images/home-page/logo.png" alt="Law and Order SVU">
+		</div>
+	</div>
+	<div class="hero">
+		
 	</div>
 </body>
 </html>

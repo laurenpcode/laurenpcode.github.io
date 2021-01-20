@@ -74,6 +74,9 @@ h1 {
 .h-1 a:focus {
 	color: blue;
 }
+h2 {
+	font-weight: normal;
+}
 h3 {
 	line-height: 1.4em;
 
