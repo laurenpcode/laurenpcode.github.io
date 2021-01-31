@@ -274,17 +274,14 @@ button:focus {
 }
 footer	{
 	background: #eee;
-	position: fixed;
-	bottom:0;
-	right:0;
-	left:0;
+	position: relative;
 	margin-top: 3rem;
 }
 footer img {
 	height: 4rem;
 	display: inline-block;
 	position: absolute;
-	top: 40%;
+	bottom: 3.5rem;
 	left: 42%;
 }
 footer ul {

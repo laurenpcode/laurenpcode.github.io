@@ -74,14 +74,10 @@ nav a:hover,
 nav a:focus {
 	color: red;
 }
-/*#sizes {
-	border: 2px solid red;
-	padding: .5rem 1rem;
-}*/
 .wrapper {
-	margin-right: 10px;
-	margin-left: 10px;
-
+	padding: 0 4em;
+	margin: 0 auto;
+	max-width: 1250px;
 }
 .clearfix:after {
 	visibility: hidden;
@@ -130,10 +126,10 @@ nav a:focus {
 footer	{
 	background: #eee;
 	position: relative;
-	bottom:0;
-	right:0;
-	left:0;
 	margin-top: 3rem;
+}
+footer .wrapper {
+	width: 100%;
 }
 footer img {
 	height: 4rem;
