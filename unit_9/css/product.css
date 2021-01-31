@@ -139,12 +139,12 @@ footer img {
 	height: 4rem;
 	display: inline-block;
 	position: absolute;
-	top: 3rem;
+	top: 40%;
 	left: 42%;
 }
 footer ul {
 	list-style-type: none;
-	padding: 2em 0;
+	padding: 1.2em 0;
 	line-height: 1.5rem;
 }
 footer ul a {
