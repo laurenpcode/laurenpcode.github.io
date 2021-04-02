@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>rows instead of columns template</title>
+	<link rel="stylesheet" href="js/vendor/magnific/magnific-popup.css">
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+		#wrapper {
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			background-color: #ccc;
+			border: solid blue 2px;
+		}
+		header {
+			background: pink;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		nav	{
+			background: orange;
+		}
+		nav li {
+			display: inline-block;
+			padding: 16px;
+		}
+		nav a {
+			text-decoration: none;
+			color: black;
+		}
+		.row:last-child {
+			margin-bottom: 4rem;
+		}
+		.row section {
+			display: inline-block;
+			width: calc( (100% - 20rem) / 4 );
+			margin: 2rem 0;
+		}
+		.row section:not(:last-child) {
+			margin-right: 4rem;
+		}
+		#row-one section {
+			background-color: yellow;
+			border: 2px solid red;
+			margin-top: 4rem;
+		}
+		
+		#row-two section {
+			color: white;
+			background-color: blue;
+			border: 2px solid red;
+		}
+		#row-three section {
+			color: white;
+			background-color: green;
+			border: 2px solid red;
+		}
+		section img {
+			width: 100%;
+		}
+		img.mfp-img {
+					width: auto;
+					height: auto;
+				}
+		@media (max-width: 900px) {
+			header {
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
+			.row section {
+				display: inline-block;
+				width: calc( (100% - 12rem) / 2 );
+			}
+			.row section:first-child {
+				margin-left: 3.5rem;
+			}
+			.row section:not(:last-child) {
+				margin-right: 3.5rem;
+			}
+		}
+		@media (max-width: 600px) {
+		#wrapper {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 1rem;
+		}
+		.row {
+
+		}
+		.row section {
+			float: none;
+			width: 90%;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 1rem;
+		}
+		.row section:first-child {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.row section:nth-child(2) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		.row section:nth-child(3) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		.row section:last-child {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div>
+				<h1>HTML Experiment in Row Structure <br>(Template)</h1>
+			</div>
+			
+		</header>
+		
+		<main>
+			<div class="row" id="row-one">
+				<section class="col-one gallery">
+					
+				</section><!-- 
+				 --><section class="col-two gallery">
+					
+				</section><!-- 
+				 --><section class="col-three gallery">
+					
+				</section><!-- 
+				 --><section class="col-four gallery">
+					
+				</section>
+			</div>
+			<div class="row" id="row-two">
+				<section class="col-one gallery">
+					
+				</section><!-- 
+				 --><section class="col-two gallery">
+					
+				</section><!-- 
+				 --><section class="col-three gallery">
+					
+				</section><!-- 
+				 --><section class="col-four gallery">
+					
+				</section>
+			</div>
+			<div class="row" id="row-three">
+				<section class="col-one gallery">
+					
+				</section><!-- 
+				 --><section class="col-two gallery">
+					
+				</section><!-- 
+				 --><section class="col-three gallery">
+					
+				</section><!-- 
+				 --><section class="col-four gallery">
+					
+				</section>
+			</div>
+			<div class="row" id="row-four">
+				<section class="col-one gallery">
+					
+				</section><!-- 
+				 --><section class="col-two gallery">
+					
+				</section><!-- 
+				 --><section class="col-three gallery">
+					
+				</section><!-- 
+				 --><section class="col-four gallery">
+					
+				</section>
+			</div>
+			<div class="row" id="row-five">
+				<section class="col-one gallery">
+					
+				</section><!-- 
+				 --><section class="col-two gallery">
+					
+				</section><!-- 
+				 --><section class="col-three gallery">
+					
+				</section><!-- 
+				 --><section class="col-four gallery">
+					
+				</section>
+			</div>
+		</main>
+	</div>
+	<script src="js/vendor/jquery-2.1.0.min.js"></script>
+	<script src="js/vendor/magnific/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
