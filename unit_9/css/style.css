@@ -15,7 +15,18 @@ body {
 	}
 	#sign-up {
 		text-align: right;
-		margin-right: 6%;
+		padding-top: 1.2em;
+		padding-right: 6%;
+		padding-bottom: 1.2em;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		color: white;
+		background: #555;
+		z-index: 10;
+		height: 1.5em;
+		
 	}
 	label {
 		font-family: 'Lato', sans-serif;
